@@ -11,14 +11,14 @@
     </v-app-bar>
 
     <!-- Navigacija za mobilne uređaje -->
-    <v-bottom-navigation app color="primary" dark v-else>
-      <v-btn to="/">
-        <v-icon>mdi-home</v-icon>
-        Home
+    <v-bottom-navigation style="background-color: #2c7ccc;" app v-else>
+      <v-btn to="/" style="background-color: #2c7ccc;;">
+        <v-icon style="color: white;">mdi-home</v-icon>
+        <span style="color: white;">Home</span>
       </v-btn>
-      <v-btn to="/contact">
-        <v-icon>mdi-home-city</v-icon>
-        Apartments
+      <v-btn to="/contact" style="background-color: #2c7ccc;">
+        <v-icon style="color: white;">mdi-home-city</v-icon>
+        <span style="color: white;">Apartments</span>
       </v-btn>
     </v-bottom-navigation>
 
@@ -53,3 +53,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.bnav {
+  background-color: #2c7ccc;;
+}
+</style>

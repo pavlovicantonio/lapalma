@@ -31,7 +31,7 @@
         </v-card>
 
         <!-- 2️⃣ DRUGA GALERIJA -->
-        <v-card elevation="11" outlined shaped tile class="sirinaVueCard2">
+        <v-card elevation="11" outlined shaped tile class="sirinaVueCard2" style="margin-bottom: 10px;">
             <v-card-title>Location 🗺️📌</v-card-title>
             <v-card-subtitle>Our apartments are located in "Pješčana uvala" (Istria, Croatia)</v-card-subtitle>
             <v-card-text :class="{ 'text-truncated2': !expanded2 }" :style="{ maxHeight: expanded2 ? 'none' : '250px', overflow: expanded2 ? 'visible' : 'hidden' }">
