@@ -238,7 +238,7 @@ export default {
     width:70%;
     height: auto;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: justify;
     z-index: 1;
 }
