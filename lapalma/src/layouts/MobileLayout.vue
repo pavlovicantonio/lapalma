@@ -224,7 +224,7 @@ export default {
     width:70%;
     height:auto;
     display: inline-block;
-    margin-top: 220px;
+    margin-top: 50px;
     text-align: justify;
     z-index: 1;
 }
@@ -232,7 +232,7 @@ export default {
     width:70%;
     height:auto;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: justify;
     z-index: 1;
 }
@@ -241,7 +241,7 @@ export default {
     width:70%;
     height:auto;
     display: inline-block;
-    margin-top: 220px;
+    margin-top: 50px;
     text-align: justify;
     z-index: 1;
 }
