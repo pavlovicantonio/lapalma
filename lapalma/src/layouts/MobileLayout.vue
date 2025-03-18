@@ -53,7 +53,7 @@
                         ></v-img>
                     </v-card>
 
-                    <v-card elevation="11" outlined shaped tile class="vueCard4">
+                    <v-card elevation="11" outlined shaped tile class="vueCard3">
                         <v-card-title style="font-size: 15px;">Locations near Pula 🏟</v-card-title>
                         <v-card-subtitle>Explore Brijuni, Kamenjak, Rovinj, Limski kanal...</v-card-subtitle>
 
@@ -105,7 +105,7 @@
                         <v-btn text @click="expanded3 = !expanded3">{{ expanded3 ? "View Less" : "View More" }}</v-btn>  
                     </v-card>
 
-                    <v-card elevation="11" outlined shaped tile class="vueCard3">
+                    <v-card elevation="11" outlined shaped tile class="vueCard4">
                         <v-card-title style="font-size: 15px;">Attractions in Pješčana <spacer></spacer>Uvala 🏖️</v-card-title>
                         <v-card-subtitle style="font-size: 13px;">In Pješčana Uvala, there are many attractive things.</v-card-subtitle>
                         <v-card-text style="font-size: 13px;">From restaurants, cafés, beach bars, shops, children's playgrounds, sports fields...</v-card-text>
@@ -226,19 +226,11 @@ export default {
     text-align: justify;
     z-index: 1;
 }
-.vueCard3{
+.vueCard3, .vueCard4{
     width:70%;
     height:auto;
     display: inline-block;
     margin-top: 40px;
-    text-align: justify;
-    z-index: 1;
-}
-.vueCard4{
-    width:70%;
-    height: auto;
-    display: inline-block;
-    margin-top: 10px;
     text-align: justify;
     z-index: 1;
 }
