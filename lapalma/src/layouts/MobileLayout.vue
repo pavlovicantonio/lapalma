@@ -121,7 +121,7 @@
                     <div class="div_margin">
                         <span></span>
                     </div>
-                    
+
                 </div>
 
                 <v-dialog v-if="selectedImages.length" v-model="showGallery" :max-width="$vuetify.breakpoint.smAndDown ? '90vw' : '600px'">
@@ -224,15 +224,24 @@ export default {
     width:70%;
     height:auto;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 80px;
     text-align: justify;
     z-index: 1;
 }
-.vueCard3, .vueCard4{
+.vueCard3{
     width:70%;
     height:auto;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 20px;
+    text-align: justify;
+    z-index: 1;
+}
+
+.vueCard4{
+    width:70%;
+    height:auto;
+    display: inline-block;
+    margin-top: 80px;
     text-align: justify;
     z-index: 1;
 }
