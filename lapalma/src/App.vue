@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <component :is="layoutComponent" v-if="layoutComponent" />
+    <component :is="layoutComponent" />
 
     <!-- Navigacija za desktop -->
     <v-app-bar app color="primary" dark v-if="!isMobile">
@@ -27,14 +27,21 @@
 <script>
 import DesktopLayout from "@/layouts/DesktopLayout.vue";
 import MobileLayout from "@/layouts/MobileLayout.vue";
-import ApartmentsDesktopLayout from "./layouts/ApartmentsDesktopLayout.vue";
+import ApartmentsDesktopLayout from "@/layouts/ApartmentsDesktopLayout.vue";
 import ApartmentsMobileLayout from "@/layouts/ApartmentsMobileLayout.vue";
-import Apartment1DesktopLayout from "./layouts/ApartmentsDesktopLayouts/Apartment1DesktopLayout.vue";
-import Apartment1MobileLayout from "./layouts/ApartmentsMobileInfo/Apartment1MobileLayout.vue";
+import Apartment1DesktopLayout from "@/layouts/ApartmentsDesktopLayouts/Apartment1DesktopLayout.vue";
+import Apartment1MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment1MobileLayout.vue";
 
 export default {
   name: "App",
-  components: { DesktopLayout, MobileLayout, ApartmentsDesktopLayout, ApartmentsMobileLayout },
+  components: {
+    DesktopLayout,
+    MobileLayout,
+    ApartmentsDesktopLayout,
+    ApartmentsMobileLayout,
+    Apartment1DesktopLayout,
+    Apartment1MobileLayout,
+  },
   data() {
     return {
       isMobile: window.innerWidth < 960,
@@ -42,16 +49,17 @@ export default {
   },
   computed: {
     layoutComponent() {
-      console.log("Ruta:", this.$route.path);
-      console.log("isMobile:", this.isMobile);
+      const layouts = {
+        "/apartments": this.isMobile ? ApartmentsMobileLayout : ApartmentsDesktopLayout,
+        "/apartment1": this.isMobile ? Apartment1MobileLayout : Apartment1DesktopLayout,
+      };
 
-      if (this.$route.path.startsWith("/apartments")) {
-        return this.isMobile ? ApartmentsMobileLayout : ApartmentsDesktopLayout;
-      }
-      if (this.$route.path.startsWith("/apartment1")) {
-        return this.isMobile ? Apartment1MobileLayout : Apartment1DesktopLayout;
-      }
-      return this.isMobile ? MobileLayout : DesktopLayout;
+      return layouts[this.$route.path] || (this.isMobile ? MobileLayout : DesktopLayout);
+    },
+  },
+  watch: {
+    isMobile() {
+      this.$forceUpdate(); // Osigurava da se komponenta osvježi kad se promijeni `isMobile`
     },
   },
   created() {
