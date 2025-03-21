@@ -32,14 +32,14 @@
 <script>
 import DesktopLayout from "@/layouts/DesktopLayout.vue";
 import MobileLayout from "@/layouts/MobileLayout.vue";
-import ApartmentDesktopLayout from "@/layouts/ApartmentsDesktopLayout.vue";
-import ApartmentMobileLayout from "@/layouts/ApartmentsMobileLayout.vue";
+import ApartmentsDesktopLayout from "./layouts/ApartmentsDesktopLayout.vue";
+import ApartmentsMobileLayout from "@/layouts/ApartmentsMobileLayout.vue";
 import Apartment1DesktopLayout from "./layouts/ApartmentsDesktopLayouts/Apartment1DesktopLayout.vue";
 import Apartment1MobileLayout from "./layouts/ApartmentsMobileInfo/Apartment1MobileLayout.vue";
 
 export default {
   name: "App",
-  components: { DesktopLayout, MobileLayout, ApartmentDesktopLayout, ApartmentMobileLayout },
+  components: { DesktopLayout, MobileLayout, ApartmentsDesktopLayout, ApartmentsMobileLayout },
   data() {
     return {
       isMobile: window.innerWidth < 960,
@@ -48,7 +48,7 @@ export default {
   computed: {
     layoutComponent() {
       if (this.$route.path.startsWith("/apartments")) {
-        return this.isMobile ? ApartmentMobileLayout : ApartmentDesktopLayout;
+        return this.isMobile ? ApartmentsMobileLayout : ApartmentsDesktopLayout;
       }
       if (this.$route.path.startsWith("/apartment1")) {
         return this.isMobile ? Apartment1MobileLayout : Apartment1DesktopLayout;
