@@ -4,8 +4,7 @@ import DesktopLayout from '../layouts/DesktopLayout.vue';
 import MobileLayout from '../layouts/MobileLayout.vue';
 import ApartmentsDesktopLayout from '../layouts/ApartmentsDesktopLayout.vue';
 import ApartmentsMobileLayout from '../layouts/ApartmentsMobileLayout.vue';
-import Apartment1MobileLayout from '@/layouts/ApartmentsMobileInfo/Apartment1MobileLayout.vue';
-import Apartment1DesktopLayout from '@/layouts/ApartmentsDesktopLayouts/Apartment1DesktopLayout.vue';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -22,7 +21,7 @@ const routes = [
   {
     path: '/apartment1',
     name: 'apartment1',
-    component: window.innerWidth < 960 ? Apartment1MobileLayout : Apartment1DesktopLayout
+    component: () => import('@/layouts/ApartmentsDesktopLayout.vue') // Default komponenta
   }
 ]
 const router = new VueRouter({
