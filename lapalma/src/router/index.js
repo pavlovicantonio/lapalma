@@ -1,9 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import DesktopLayout from '../layouts/DesktopLayout.vue';
-import MobileLayout from '../layouts/MobileLayout.vue';
 import ApartmentsDesktopLayout from '../layouts/ApartmentsDesktopLayout.vue';
-import ApartmentsMobileLayout from '../layouts/ApartmentsMobileLayout.vue';
+import Apartment1DesktopLayout from '@/layouts/ApartmentsDesktopLayouts/Apartment1DesktopLayout.vue';
 
 Vue.use(VueRouter);
 
@@ -11,21 +10,22 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: window.innerWidth < 960 ? MobileLayout : DesktopLayout
+    component: DesktopLayout // Layout biramo u App.vue
   },
   {
     path: '/apartments',
     name: 'apartments',
-    component: window.innerWidth < 960 ? ApartmentsMobileLayout : ApartmentsDesktopLayout
+    component: ApartmentsDesktopLayout
   },
   {
     path: '/apartment1',
     name: 'apartment1',
-    component: () => import('@/layouts/ApartmentsDesktopLayout.vue') // Default komponenta
+    component: Apartment1DesktopLayout
   }
-]
+];
+
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'history', // Potreban _redirects fajl na Netlifyu
   base: process.env.BASE_URL,
   routes
 });

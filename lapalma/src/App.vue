@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <!-- Dinamički odabir layouta prema ruti i uređaju -->
     <component :is="layoutComponent" v-if="layoutComponent" />
 
     <!-- Navigacija za desktop -->
@@ -22,10 +21,6 @@
         <span style="color: white;">Apartments</span>
       </v-btn>
     </v-bottom-navigation>
-
-    <v-main class="pa-0">
-      
-    </v-main>
   </v-app>
 </template>
 
@@ -47,6 +42,9 @@ export default {
   },
   computed: {
     layoutComponent() {
+      console.log("Ruta:", this.$route.path);
+      console.log("isMobile:", this.isMobile);
+
       if (this.$route.path.startsWith("/apartments")) {
         return this.isMobile ? ApartmentsMobileLayout : ApartmentsDesktopLayout;
       }
@@ -55,11 +53,6 @@ export default {
       }
       return this.isMobile ? MobileLayout : DesktopLayout;
     },
-  },
-  provide() {
-    return {
-      isMobile: this.isMobile, // Osiguraj da pružaš `isMobile`
-    };
   },
   created() {
     window.addEventListener("resize", this.checkScreen);
@@ -74,9 +67,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.bnav {
-  background-color: #2c7ccc;;
-}
-</style>
