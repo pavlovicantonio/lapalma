@@ -4,110 +4,338 @@
         <div class="padmarg"></div>
 
         <!-- 1️⃣ PRVA GALERIJA -->
-        <v-card elevation="11" outlined shaped tile class="sirinaVueCard1">
-            <v-card-title>La Palma Apartments 🌴</v-card-title>
-            <v-card-subtitle>Discover Our Exclusive Offer – Three Unique Apartments Just for You!</v-card-subtitle>
-            <v-card-text :class="{ 'text-truncated1': !expanded1 }" :style="{ maxHeight: expanded1 ? 'none' : '250px', overflow: expanded1 ? 'visible' : 'hidden' }">
-                Escape to a place where comfort meets paradise. La Palma Apartments offer the perfect retreat 
-                for those seeking relaxation, adventure, and unforgettable memories.
-                Wake up to the scent of the sea breeze, spend your days basking by the pool or exploring the 
-                vibrant surroundings, and unwind in our thoughtfully designed apartments that feel like home. 
-                Whether you're looking for a romantic getaway, a fun-filled family vacation, or a peaceful escape, 
-                your perfect stay starts here. Book your stay today and experience the magic of the Mediterranean! 🌿☀️🌊
-                <br><br>
-                At La Palma Apartments, we offer a selection of three beautifully designed apartments, 
-                each providing a perfect blend of comfort and style. Located just 250 meters from the 
-                sea, you can enjoy easy access to the beach while relaxing in the peaceful ambiance of 
-                our property. Unwind by the pool and experience the tranquility that makes your stay truly 
-                special. Whether you're seeking a romantic escape, a fun family holiday, or a productive 
-                business trip, our apartments are tailored to meet your every need.
-            </v-card-text>
-            <v-btn text @click="expanded1 = !expanded1">{{ expanded1 ? "View Less" : "View More" }}</v-btn>
-            <v-img 
-                src="../assets/apartmentspic1.jpg" 
-                class="clickable-image"
-                @click="openGallery(0, 'La Palma Apartments')"
+        <v-card elevation="11" outlined shaped tile class="sirinaVueCards1" :style="{ zIndex: zIndex1}">
+            <v-card-title>Apartment 1</v-card-title>
+            <v-container>
+                <v-container>
+    <v-row>
+      <!-- Prva slika lijevo, najveća -->
+      <v-col cols="12" md="6">
+        <v-img
+          src="https://picsum.photos/300"
+          alt="Large Image"
+          height="300px"
+          width="300px"
+          class="clickable-image"
+          @click="openGallery(1, 'Apartment 1')"
+        ></v-img>
+      </v-col>
+
+      <!-- Dvije manje slike desno, jedna ispod druge -->
+      <v-col cols="12" md="6">
+        <v-row>
+          <v-col cols="12">
+            <v-img
+              src="https://picsum.photos/300/150"
+              alt="Small Image 1"
+              height="138px"
+              width="300px"
+              class="clickable-image"
+              @click="openGallery(1, 'Apartment 1')"
             ></v-img>
+          </v-col>
+          <v-col cols="12">
+            <v-img
+              src="https://picsum.photos/300/150"
+              alt="Small Image 2"
+              height="138px"
+              width="300px"
+              class="clickable-image"
+              @click="openGallery(1, 'Apartment 1')"
+            ></v-img>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
+            </v-container>
+           <v-container>
+                <v-row align="center">
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-wifi</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Wifi</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-parking</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Parking</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-television</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">TV</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-human-male-female</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Max. 4</span>
+                    </v-col>
+                </v-row>
+
+                <v-row align="center">
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-pool</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Pool</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-fridge</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Kitchen</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-dog</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Pets</span>
+                    </v-col>
+                    <v-col cols="2" class="d-flex align-center">
+                        <v-icon>mdi-grill</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Grill</span>
+                    </v-col>
+                </v-row>
+             </v-container>
+             <center>
+             <v-btn @click="swapZIndex()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">APARTMENT 1 <v-icon>mdi-information</v-icon></v-btn>
+             </center>
+        </v-card>
+        <!-- INFO ZA PRVI APARTMAN -->
+        <v-card class="sirinaVueCards1-1" :style="{ zIndex: zIndex2}">
+            <v-card-title>Apartment 1 INFO</v-card-title>
+            <v-container style="text-align: left;">
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 50m², 2 Bedrooms, 1 Bathroom</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Capacity:</b> Up to 4 guests</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Outdoor:</b> Balcony, Terrace, Garden, BBQ</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>View:</b> Sea view, Garden view, City view</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Parking:</b> Private parking, Free street parking</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed/not allowed</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 50m</v-card-text>
+                    </v-container>
+                    <v-container style="margin-top: 35px;">
+                        <v-card-text>For more information, feel free to contact us via:</v-card-text>
+                       <center>
+                            <v-icon @click="openWhatsApp()" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
+                            <v-icon @click="sendGmail()" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
+                            <br>
+                            <v-btn @click="swapZIndex()" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
+                       </center> 
+                    </v-container>
         </v-card>
 
-        <!-- 2️⃣ DRUGA GALERIJA -->
-        <v-card elevation="11" outlined shaped tile class="sirinaVueCard2" style="margin-bottom: 10px;">
-            <v-card-title>Location 🗺️📌</v-card-title>
-            <v-card-subtitle>Our apartments are located in "Pješčana uvala" ( Pula, Istria, Croatia )</v-card-subtitle>
-            <v-card-text :class="{ 'text-truncated2': !expanded2 }" :style="{ maxHeight: expanded2 ? 'none' : '250px', overflow: expanded2 ? 'visible' : 'hidden' }">
-                ... one of the most popular destinations near Pula, offering a 
-                perfect combination of natural beauty and modern amenities. Just 250 meters from the sea, our location 
-                provides easy access to stunning beaches, vibrant local attractions, and a peaceful atmosphere for a truly relaxing stay.
-                <br><br>
-                "Pješčana uvala" offers a variety of attractions and amenities to enhance your stay. Here, you will find beautiful beaches, 
-                restaurants serving local specialties, seaside cafés, shops, and a range of recreational activities such as water sports and 
-                scenic seaside promenades. It is the perfect place to relax, explore, and enjoy the Mediterranean lifestyle.
-            </v-card-text>
-            <v-btn text @click="expanded2 = !expanded2">{{ expanded2 ? "View Less" : "View More" }}</v-btn>
-            <v-img 
-                src="../assets/arena.jpg" 
-                style="height: 300px;"
-                class="clickable-image"
-                @click="openGallery(1, 'Location')"
+        <v-card elevation="11" outlined shaped tile class="sirinaVueCards2" :style="{ zIndex: zIndex3}">
+            <v-card-title>Apartment 2</v-card-title>
+            <v-container>
+                <v-container>
+    <v-row>
+      <!-- Prva slika lijevo, najveća -->
+      <v-col cols="12" md="6">
+        <v-img
+          src="https://picsum.photos/300"
+          alt="Large Image"
+          height="300px"
+          width="300px"
+          class="clickable-image"
+          @click="openGallery(1, 'Apartment 1')"
+        ></v-img>
+      </v-col>
+
+      <!-- Dvije manje slike desno, jedna ispod druge -->
+      <v-col cols="12" md="6">
+        <v-row>
+          <v-col cols="12">
+            <v-img
+              src="https://picsum.photos/300/150"
+              alt="Small Image 1"
+              height="138px"
+              width="300px"
+              class="clickable-image"
+              @click="openGallery(1, 'Apartment 1')"
             ></v-img>
+          </v-col>
+          <v-col cols="12">
+            <v-img
+              src="https://picsum.photos/300/150"
+              alt="Small Image 2"
+              height="138px"
+              width="300px"
+              class="clickable-image"
+              @click="openGallery(1, 'Apartment 1')"
+            ></v-img>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
+            </v-container>
+           <v-container>
+                <v-row align="center">
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-wifi</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Wifi</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-parking</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Parking</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-television</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">TV</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-human-male-female</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Max. 4</span>
+                    </v-col>
+                </v-row>
+
+                <v-row align="center">
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-pool</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Pool</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-fridge</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Kitchen</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-dog</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Pets</span>
+                    </v-col>
+                    <v-col cols="2" class="d-flex align-center">
+                        <v-icon>mdi-grill</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Grill</span>
+                    </v-col>
+                </v-row>
+             </v-container>
+             <center>
+             <v-btn @click="swapZIndex2()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">APARTMENT 2 <v-icon>mdi-information</v-icon></v-btn>
+             </center>
+        </v-card>
+        <!--INFO ZA DRUGI APARTMAN -->
+        <v-card class="sirinaVueCards1-2" :style="{ zIndex: zIndex4}">
+            <v-card-title>Apartment 2 INFO</v-card-title>
+            <v-container style="text-align: left;">
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 50m², 2 Bedrooms, 1 Bathroom</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Capacity:</b> Up to 4 guests</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Outdoor:</b> Balcony, Terrace, Garden, BBQ</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>View:</b> Sea view, Garden view, City view</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Parking:</b> Private parking, Free street parking</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed/not allowed</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 50m</v-card-text>
+                    </v-container>
+                    <v-container style="margin-top: 35px;">
+                        <v-card-text>For more information, feel free to contact us via:</v-card-text>
+                       <center>
+                            <v-icon @click="openWhatsApp2()" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
+                            <v-icon @click="sendGmail2()" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
+                            <br>
+                            <v-btn @click="swapZIndex2()" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
+                       </center> 
+                    </v-container>
         </v-card>
 
-        <v-card elevation="11" outlined shaped tile class="sirinaVueCard2" style="margin-bottom: 10px;">
-            <v-card-title>Locations near Pula 🏟</v-card-title>
-            <v-card-subtitle>Explore Brijuni, Kamenjak, Rovinj, Limski kanal...</v-card-subtitle>
-            <v-card-text :class="{ 'text-truncated2': !expanded2 }" :style="{ maxHeight: expanded2 ? 'none' : '250px', overflow: expanded2 ? 'visible' : 'hidden' }">
-                In the vicinity of the apartment and Pula, there are many attractive locations you can explore while enjoying your relaxing vacation.
-                <br><br><b>National park Brijuni</b><br>
-                Brijuni National Park is a stunning archipelago known for its untouched nature, rich history, and diverse wildlife. The islands boast 
-                ancient Roman ruins, a safari park with exotic animals, and breathtaking coastal views. Once a private retreat of Yugoslav leader Tito, 
-                Brijuni still holds an air of exclusivity and charm. A visit offers a perfect mix of history, nature, and relaxation just a short boat ride 
-                from Pula. <br><br>
-                <center>
-                    <img src="../assets/npbrijuni.jpg" alt="" style="width: 400px;" class="clickable-image" @click="openGallery(3, 'NP Brijuni')">
-                </center>
-                <br><br>
-                <b>Rt Kamenjak</b><br>
-                Kamenjak is a beautiful nature park at the southernmost tip of Istria, known for its rugged coastline, crystal-clear waters, and hidden coves. 
-                It’s a paradise for nature lovers, offering scenic bike trails, unique rock formations, and rich marine life. The park is also famous for its 
-                prehistoric dinosaur footprints and the quirky Safari Bar, a must-visit spot for a laid-back experience. Whether you’re into swimming, hiking, 
-                or just enjoying stunning sunsets, Kamenjak is a perfect getaway. <br><br>
-                <center>
-                    <img src="../assets/rtkamenjak.jpg" alt="" style="width: 400px;" class="clickable-image" @click="openGallery(4, 'Rt Kamenjak')">
-                </center>
-                <br><br>
-                <b>Rovinj</b><br>
-                Rovinj is one of the most picturesque towns in Istria, known for its colorful old town, charming cobblestone streets, and breathtaking sunsets. 
-                The iconic Church of St. Euphemia offers stunning panoramic views of the Adriatic. With its rich Venetian heritage, vibrant art scene, and beautiful beaches, 
-                Rovinj is a perfect blend of history and coastal charm. Whether you explore its hidden alleys or relax by the sea, this town leaves a lasting impression.
-                Rovinj is approximately 40 km from Pješčana Uvala, and the drive takes around 35 minutes, depending on traffic <br><br>
-                <center>
-                    <img src="../assets/rovinj.jpg" alt="" style="width: 400px;" class="clickable-image" @click="openGallery(5, 'Rovinj')">
-                </center>
-                <br><br>
-                <b>Limski kanal</b><br>
-                Limski kanal is a stunning natural fjord-like bay between Rovinj and Vrsar, known for its emerald-green waters and steep cliffs covered in lush vegetation. 
-                It is famous for its oyster and mussel farms, making it a great spot for seafood lovers. The area is also rich in history, with ancient caves once used by hermits 
-                and pirates. Whether you explore it by boat, hike along the scenic trails, or enjoy fresh seafood at a local restaurant, Limski kanal offers a perfect mix of nature and gastronomy. <br><br>
-                <center>
-                    <img src="../assets/limskikanal.jpg" alt="" style="width: 400px;" class="clickable-image" @click="openGallery(6, 'Limski kanal')">
-                </center>
+        <v-card elevation="11" outlined shaped tile class="sirinaVueCards3" :style="{ zIndex: zIndex5}">
+            <v-card-title>Apartment 3</v-card-title>
+            <v-container>
+                <v-container>
+    <v-row>
+    
+      <v-col cols="12" md="6">
+        <v-img
+          src="https://picsum.photos/300"
+          alt="Large Image"
+          height="300px"
+          width="300px"
+          class="clickable-image"
+          @click="openGallery(1, 'Apartment 1')"
+        ></v-img>
+      </v-col>
 
-            </v-card-text>
-            <v-btn text @click="expanded2 = !expanded2">{{ expanded2 ? "View Less" : "View More" }}</v-btn>
-        </v-card>
-
-        <!-- 3️⃣ TREĆA GALERIJA -->
-        <v-card elevation="11" outlined shaped tile class="sirinaVueCard2">
-            <v-card-title>Attractions in Pješčana Uvala 🏖️</v-card-title>
-            <v-card-subtitle>In Pješčana Uvala, there are many attractive things.</v-card-subtitle>
-            <v-card-text :class="{ 'text-truncated3': !expanded3 }" :style="{ maxHeight: expanded3 ? 'none' : '250px', overflow: expanded3 ? 'visible' : 'hidden' }">From restaurants, cafés, beach bars, shops, children's playgrounds, sports fields...</v-card-text>
-            <v-card-text>Restaurants:<br><br>Škuža<br>Lanterna<br>Cava Romana<br>Bistro Margerita</v-card-text>
-            <v-card-text>Beach bars, caffe bars:<br><br>Batana<br>Splash<br>Caffe bar YES<br>Lounge bar DolceVibe</v-card-text>
-            <v-img 
-                src="../assets/beachbar1.jpg" 
-                class="clickable-image"
-                @click="openGallery(2, 'Attractions')"
+      <v-col cols="12" md="6">
+        <v-row>
+          <v-col cols="12">
+            <v-img
+              src="https://picsum.photos/300/150"
+              alt="Small Image 1"
+              height="138px"
+              width="300px"
+              class="clickable-image"
+              @click="openGallery(1, 'Apartment 1')"
             ></v-img>
+          </v-col>
+          <v-col cols="12">
+            <v-img
+              src="https://picsum.photos/300/150"
+              alt="Small Image 2"
+              height="138px"
+              width="300px"
+              class="clickable-image"
+              @click="openGallery(1, 'Apartment 1')"
+            ></v-img>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
+            </v-container>
+           <v-container>
+                <v-row align="center">
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-wifi</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Wifi</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-parking</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Parking</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-television</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">TV</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-human-male-female</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Max. 4</span>
+                    </v-col>
+                </v-row>
+
+                <v-row align="center">
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-pool</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Pool</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-fridge</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Kitchen</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-dog</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Pets</span>
+                    </v-col>
+                    <v-col cols="2" class="d-flex align-center">
+                        <v-icon>mdi-grill</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Grill</span>
+                    </v-col>
+                </v-row>
+             </v-container>
+             <center>
+             <v-btn @click="swapZIndex3()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">APARTMENT 3<v-icon>mdi-information</v-icon></v-btn>
+             </center>
+        </v-card>
+        <v-card class="sirinaVueCards1-3" :style="{ zIndex: zIndex6}">
+            <v-card-title>Apartment 3 INFO</v-card-title>
+            <v-container style="text-align: left;">
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 50m², 2 Bedrooms, 1 Bathroom</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Capacity:</b> Up to 4 guests</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Outdoor:</b> Balcony, Terrace, Garden, BBQ</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>View:</b> Sea view, Garden view, City view</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Parking:</b> Private parking, Free street parking</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed/not allowed</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 50m</v-card-text>
+                    </v-container>
+                    <v-container style="margin-top: 35px;">
+                        <v-card-text>For more information, feel free to contact us via:</v-card-text>
+                       <center>
+                            <v-icon @click="openWhatsApp3()" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
+                            <v-icon @click="sendGmail3()" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
+                            <br>
+                            <v-btn @click="swapZIndex3()" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
+                       </center> 
+                    </v-container>
         </v-card>
 
         <!-- 🔍 GALERIJA -->
@@ -142,6 +370,12 @@ export default {
       expanded2: false,
       expanded3: false,
       showGallery: false,
+      zIndex1: 1,
+      zIndex2: 0,
+      zIndex3: 3,
+      zIndex4: 2,
+      zIndex5: 5,
+      zIndex6: 4,
       currentImage: 0,
       galleryTitle: "",
       selectedImages: [],
@@ -167,9 +401,79 @@ export default {
       this.selectedImages = this.galleries[index];
       this.galleryTitle = title;
       this.showGallery = true;
-    }
-  }
-};
+    },
+
+    swapZIndex() {
+      // Zamjena z-index vrijednosti
+      if (this.zIndex1 > this.zIndex2) {
+        this.zIndex1 -= 1;
+        this.zIndex2 += 1;
+      } else {
+        this.zIndex1 += 1;
+        this.zIndex2 -= 1;
+      }
+    },
+    swapZIndex2() {
+      // Zamjena z-index vrijednosti
+      if (this.zIndex3 > this.zIndex4) {
+        this.zIndex3 -= 1;
+        this.zIndex4 += 1;
+      } else {
+        this.zIndex3 += 1;
+        this.zIndex4 -= 1;
+      }
+    },
+    swapZIndex3() {
+      // Zamjena z-index vrijednosti
+      if (this.zIndex5 > this.zIndex6) {
+        this.zIndex5 -= 1;
+        this.zIndex6 += 1;
+      } else {
+        this.zIndex5 += 1;
+        this.zIndex6 -= 1;
+      }
+    },
+    openWhatsApp() {
+      const phoneNumber = "+385993427477"; // Zamijeni brojem
+      const message = "I%20am%20interested%20in%20apartment%201!"; // Enkodirana poruka
+      const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+      window.open(url, "_blank");
+    },
+    sendGmail() {
+      const email = "info@example.com"; // Zamijeni pravom e-mail adresom
+      const subject = "Inquiry about Apartment 1";
+      const body = "I am interested in apartment 1! Please send me more information.";
+      const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(gmailLink, "_blank");
+    },
+    openWhatsApp2() {
+      const phoneNumber = "+385993427477"; // Zamijeni brojem
+      const message = "I%20am%20interested%20in%20apartment%202!"; // Enkodirana poruka
+      const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+      window.open(url, "_blank");
+    },
+    sendGmail2() {
+      const email = "info@example.com"; // Zamijeni pravom e-mail adresom
+      const subject = "Inquiry about Apartment 2";
+      const body = "I am interested in apartment 2! Please send me more information.";
+      const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(gmailLink, "_blank");
+    },
+    openWhatsApp3() {
+      const phoneNumber = "+385993427477"; // Zamijeni brojem
+      const message = "I%20am%20interested%20in%20apartment%203!"; // Enkodirana poruka
+      const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+      window.open(url, "_blank");
+    },
+    sendGmail3() {
+      const email = "info@example.com"; // Zamijeni pravom e-mail adresom
+      const subject = "Inquiry about Apartment 3";
+      const body = "I am interested in apartment 3! Please send me more information.";
+      const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(gmailLink, "_blank");
+    },
+}
+}
 </script>
 
 <style>
@@ -183,13 +487,44 @@ export default {
     transform: scale(1.05);
 }
 
-.sirinaVueCard1, .sirinaVueCard2 {
+.sirinaVueCards1, .sirinaVueCards2 {
     margin-top: 30px;
     width: 500px;
     text-align: justify;
     padding: 15px;
 }
-
+.sirinaVueCards2{
+    position: relative;
+    bottom: 570px;
+}
+.sirinaVueCards3{
+    width: 500px;
+    margin-top: -600px;
+    margin-bottom: 50px;
+}
+.sirinaVueCards1-1{
+    padding: 15px;
+    width: 500px;
+    height: 610px;
+    position: relative;
+    bottom: 610px;
+}
+.sirinaVueCards1-2{
+    padding: 15px;
+    width: 500px;
+    height: 610px;
+    position: relative;
+    margin-top: -500px;
+    bottom: 680px;
+}
+.sirinaVueCards1-3{
+    padding: 15px;
+    width: 500px;
+    height: 585px;
+    position: relative;
+    margin-top: -635px;
+    margin-bottom: 30px;
+}
 .none {
     background-image: url(../assets/backgroundimage.jpg);
     background-attachment: fixed;
@@ -199,3 +534,4 @@ export default {
     height: 80px;
 }
 </style>
+

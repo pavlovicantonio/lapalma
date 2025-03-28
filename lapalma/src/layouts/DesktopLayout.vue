@@ -154,7 +154,7 @@ export default {
         [ require('@/assets/brijuni1.jpg'), require('@/assets/brijuni2.jpg'), require('@/assets/brijuni3.jpeg'), require('@/assets/brijuni4.jpg') ],
         [ require('@/assets/rtkamenjak1.jpg'), require('@/assets/rtkamenjak2.jpg'), require('@/assets/rtkamenjak3.jpg'), require('@/assets/rtkamenjak4.jpeg') ],
         [ require('@/assets/rovinj1.jpg'), require('@/assets/rovinj2.jpg'), require('@/assets/rovinj3.jpg'), require('@/assets/rovinj4.jpeg') ],
-        [ require('@/assets/limskikanal1.jpg'), require('@/assets/limskikanal2.jpg'), require('@/assets/limskikanal3.jpg'), require('@/assets/limskikanal4.jpg') ],
+        [ require('@/assets/lk1.jpg'), require('@/assets/lk2.jpg'), require('@/assets/lk3.jpg'), require('@/assets/lk4.jpg'), require('@/assets/lk5.jpg') ],
       ]
     };
   },

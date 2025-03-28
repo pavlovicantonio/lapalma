@@ -53,19 +53,6 @@
                         ></v-img>
                     </v-card>
 
-                    <v-card elevation="11" outlined shaped tile class="vueCard3">
-                        <v-card-title style="font-size: 15px;">Attractions in Pješčana <spacer></spacer>Uvala 🏖️</v-card-title>
-                        <v-card-subtitle style="font-size: 13px;">In Pješčana Uvala, there are many attractive things.</v-card-subtitle>
-                        <v-card-text style="font-size: 13px;">From restaurants, cafés, beach bars, shops, children's playgrounds, sports fields...</v-card-text>
-                        <v-card-text style="font-size: 13px;"><b>Restaurants:</b><br>Škuža<br>Lanterna<br>Cava Romana<br>Bistro Margerita</v-card-text>
-                        <v-card-text style="font-size: 13px;"><b>Beach bars, caffe bars:</b><br>Batana<br>Splash<br>Caffe bar YES<br>Lounge bar DolceVibe</v-card-text>
-                        <v-img 
-                            src="../assets/beachbar1.jpg" 
-                            class="clickable-image"
-                            @click="openGallery(2, 'Attractions')"
-                        ></v-img>
-                    </v-card>
-
                     <v-card elevation="11" outlined shaped tile class="vueCard4">
                         <v-card-title style="font-size: 15px;">Locations near Pula 🏟</v-card-title>
                         <v-card-subtitle>Explore Brijuni, Kamenjak, Rovinj, Limski kanal...</v-card-subtitle>
@@ -116,6 +103,19 @@
                         </v-card-text>
 
                         <v-btn text @click="expanded3 = !expanded3">{{ expanded3 ? "View Less" : "View More" }}</v-btn>  
+                    </v-card>
+
+                    <v-card elevation="11" outlined shaped tile class="vueCard3">
+                        <v-card-title style="font-size: 15px;">Attractions in Pješčana <spacer></spacer>Uvala 🏖️</v-card-title>
+                        <v-card-subtitle style="font-size: 13px;">In Pješčana Uvala, there are many attractive things.</v-card-subtitle>
+                        <v-card-text style="font-size: 13px;">From restaurants, cafés, beach bars, shops, children's playgrounds, sports fields...</v-card-text>
+                        <v-card-text style="font-size: 13px;"><b>Restaurants:</b><br>Škuža<br>Lanterna<br>Cava Romana<br>Bistro Margerita</v-card-text>
+                        <v-card-text style="font-size: 13px;"><b>Beach bars, caffe bars:</b><br>Batana<br>Splash<br>Caffe bar YES<br>Lounge bar DolceVibe</v-card-text>
+                        <v-img 
+                            src="../assets/beachbar1.jpg" 
+                            class="clickable-image"
+                            @click="openGallery(2, 'Attractions')"
+                        ></v-img>
                     </v-card>
 
                     <div class="div_margin">
@@ -169,7 +169,7 @@ export default {
         [ require('@/assets/brijuni1.jpg'), require('@/assets/brijuni2.jpg'), require('@/assets/brijuni3.jpeg'), require('@/assets/brijuni4.jpg') ],
         [ require('@/assets/rtkamenjak1.jpg'), require('@/assets/rtkamenjak2.jpg'), require('@/assets/rtkamenjak3.jpg'), require('@/assets/rtkamenjak4.jpeg') ],
         [ require('@/assets/rovinj1.jpg'), require('@/assets/rovinj2.jpg'), require('@/assets/rovinj3.jpg'), require('@/assets/rovinj4.jpeg') ],
-        [ require('@/assets/limskikanal1.jpg'), require('@/assets/limskikanal2.jpg'), require('@/assets/limskikanal3.jpg'), require('@/assets/limskikanal4.jpg') ],
+        [ require('@/assets/lk1.jpg'), require('@/assets/lk2.jpg'), require('@/assets/lk3.jpg'), require('@/assets/lk4.jpg'), require('@/assets/lk5.jpg') ],
       ]
     };
   },
