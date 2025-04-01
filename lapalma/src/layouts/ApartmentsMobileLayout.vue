@@ -72,7 +72,7 @@
                             </v-container>
                         </div>
                         <center> 
-                            <v-btn style="margin-top: 20px; margin-bottom: 20px; color: white;" color="lime">Apartment 2<v-icon>mdi-information</v-icon></v-btn>
+                            <v-btn to="/apartment2" style="margin-top: 20px; margin-bottom: 20px; color: white;" color="lime">Apartment 2<v-icon>mdi-information</v-icon></v-btn>
                         </center>
                     </v-card>
 
@@ -107,7 +107,7 @@
                             </v-container>
                         </div>
                         <center> 
-                            <v-btn style="margin-top: 20px; margin-bottom: 20px; color:white" color="lime">Apartment 3<v-icon>mdi-information</v-icon></v-btn>
+                            <v-btn to="/apartment3" style="margin-top: 20px; margin-bottom: 20px; color:white" color="lime">Apartment 3<v-icon>mdi-information</v-icon></v-btn>
                         </center>
                     </v-card>
             </center>

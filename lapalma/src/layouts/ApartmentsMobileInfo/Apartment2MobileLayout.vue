@@ -5,9 +5,9 @@
         </div>
         <div class="AML_secondDiv">
             <center>
-                    <v-card elevation="11" outlined shaped tile class="AML_vueCard1" >
+                    <v-card elevation="11" outlined shaped tile class="AML_vueCard2" >
                         <v-container style="text-align: left;">
-                        <v-card-title style="font-size: 15px; position: relative; right: 12px;">Apartment 1</v-card-title>
+                        <v-card-title style="font-size: 15px; position: relative; right: 12px;">Apartment 2</v-card-title>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Size:</b> 50m², 2 Bedrooms, 1 Bathroom</v-card-text>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Capacity:</b> Up to 4 guests</v-card-text>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
@@ -19,9 +19,9 @@
                     </v-container>
                         <v-card-text>For more information, feel free to contact us via:</v-card-text>
                        <center>
-                            <v-icon @click="openWhatsApp()" class="icons" style="padding: 10px;">mdi-whatsapp</v-icon>
-                            <v-icon @click="callPhone()" class="icons" style="padding: 10px;">mdi-phone</v-icon>
-                            <v-icon @click="sendEmail()" class="icons" style="padding: 10px;">mdi-email-outline</v-icon>
+                            <v-icon class="icons" style="padding: 10px;">mdi-whatsapp</v-icon>
+                            <v-icon class="icons" style="padding: 10px;">mdi-phone</v-icon>
+                            <v-icon class="icons" style="padding: 10px;">mdi-email-outline</v-icon>
                             <br>
                             <v-btn to="/apartments" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
                        </center> 
@@ -50,7 +50,7 @@
     height: auto;
     z-index: 0;
 }
-.AML_vueCard1{
+.AML_vueCard2{
     width:70%;
     height: auto;
     display: inline-block;
@@ -63,30 +63,3 @@
     scale: 1.4;
 }
 </style>
-
-<script>
-export default{
-    data(){
-
-    },
-    methods:{
-        sendEmail() {
-        const email = "info@example.com";
-        const subject = "Inquiry about Apartment 1";
-        const body = "I am interested in apartment 1! Please send me more information.";
-        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = mailtoLink;
-        },
-        openWhatsApp() {
-        const phoneNumber = "+385993427477";
-        const message = "I am interested in apartment 1!";
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank");
-        },
-        callPhone() {
-        const phoneNumber = "+385993427477";
-        window.location.href = `tel:${phoneNumber}`;
-        }
-    }
-}
-</script>

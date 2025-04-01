@@ -31,6 +31,8 @@ import ApartmentsDesktopLayout from "@/layouts/ApartmentsDesktopLayout.vue";
 import ApartmentsMobileLayout from "@/layouts/ApartmentsMobileLayout.vue";
 import Apartment1DesktopLayout from "@/layouts/ApartmentsDesktopLayouts/Apartment1DesktopLayout.vue";
 import Apartment1MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment1MobileLayout.vue";
+import Apartment2MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment2MobileLayout.vue";
+import Apartment3MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment3MobileLayout.vue";
 
 export default {
   name: "App",
@@ -41,6 +43,8 @@ export default {
     ApartmentsMobileLayout,
     Apartment1DesktopLayout,
     Apartment1MobileLayout,
+    Apartment2MobileLayout,
+    Apartment3MobileLayout
   },
   data() {
     return {
@@ -52,6 +56,8 @@ export default {
       const layouts = {
         "/apartments": this.isMobile ? ApartmentsMobileLayout : ApartmentsDesktopLayout,
         "/apartment1": this.isMobile ? Apartment1MobileLayout : Apartment1DesktopLayout,
+        "/apartment2": this.isMobile ? Apartment2MobileLayout : Apartment1DesktopLayout,
+        "/apartment3": this.isMobile ? Apartment3MobileLayout : Apartment1DesktopLayout
       };
 
       return layouts[this.$route.path] || (this.isMobile ? MobileLayout : DesktopLayout);

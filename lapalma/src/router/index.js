@@ -21,6 +21,16 @@ const routes = [
     path: '/apartment1',
     name: 'apartment1',
     component: Apartment1DesktopLayout
+  },
+  {
+    path: '/apartment2',
+    name: 'apartment2',
+    component: Apartment1DesktopLayout
+  },
+  {
+    path: '/apartment3',
+    name: 'apartment3',
+    component: Apartment1DesktopLayout
   }
 ];
 
