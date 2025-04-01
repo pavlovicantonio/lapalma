@@ -20,7 +20,7 @@
                         <v-card-text>For more information, feel free to contact us via:</v-card-text>
                        <center>
                             <v-icon @click="openWhatsApp()" class="icons" style="padding: 10px;">mdi-whatsapp</v-icon>
-                            <v-icon @click="callPhone()" class="icons" style="padding: 10px;">mdi-phone</v-icon>
+                            <v-icon @click="sendSMS()" class="icons" style="padding: 10px;">mdi-phone</v-icon>
                             <v-icon @click="sendEmail()" class="icons" style="padding: 10px;">mdi-email-outline</v-icon>
                             <br>
                             <v-btn to="/apartments" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
@@ -83,9 +83,10 @@ export default{
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
         },
-        callPhone() {
+        sendSMS() {
         const phoneNumber = "+385993427477";
-        window.location.href = `tel:${phoneNumber}`;
+        const message = "I am interested in apartment 1!";
+        window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
         }
     }
 }
