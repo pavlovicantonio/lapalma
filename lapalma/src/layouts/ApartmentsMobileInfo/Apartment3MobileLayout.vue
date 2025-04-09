@@ -21,7 +21,7 @@
                        <center>
                             <v-icon @click="openWhatsApp()" class="icons" style="padding: 10px;">mdi-whatsapp</v-icon>
                             <v-icon @click="sendSMS()" class="icons" style="padding: 10px;">mdi-phone</v-icon>
-                            <v-icon @clcik="sendEmail()" class="icons" style="padding: 10px;">mdi-email-outline</v-icon>
+                            <v-icon @click="sendEmail()" class="icons" style="padding: 10px;">mdi-email-outline</v-icon>
                             <br>
                             <v-btn @click="goToApartments()" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
                        </center> 
