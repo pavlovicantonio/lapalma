@@ -71,7 +71,7 @@ export default{
     },
     methods:{
         sendEmail() {
-        const email = "info@example.com";
+        const email = "croatiavacation05@gmail.com";
         const subject = "Inquiry about Apartment 3";
         const body = "I am interested in apartment 3! Please send me more information.";
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
