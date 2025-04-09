@@ -102,7 +102,8 @@
                             </center>
                         </v-card-text>
 
-                        <v-btn text @click="expanded3 = !expanded3">{{ expanded3 ? "View Less" : "View More" }}</v-btn>  
+                        <v-btn text @click="expanded3 = !expanded3">{{ expanded3 ? "View Less" : "View More" }}</v-btn>
+                        <v-img src="../assets/ISTRA.png"></v-img>
                     </v-card>
 
                     <v-card elevation="11" outlined shaped tile class="vueCard3">
