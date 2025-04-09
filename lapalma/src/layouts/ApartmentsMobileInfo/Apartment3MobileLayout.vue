@@ -23,7 +23,7 @@
                             <v-icon @click="sendSMS()" class="icons" style="padding: 10px;">mdi-phone</v-icon>
                             <v-icon @clcik="sendEmail()" class="icons" style="padding: 10px;">mdi-email-outline</v-icon>
                             <br>
-                            <v-btn to="/apartments" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
+                            <v-btn to="/apartments" @click="window.location.reload()" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
                        </center> 
                     </v-card>
             </center>
