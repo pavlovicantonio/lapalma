@@ -94,10 +94,13 @@
 
             </v-card-text>
             <v-btn text @click="expanded2 = !expanded2">{{ expanded2 ? "View Less" : "View More" }}</v-btn>
+            <center>
+                <v-img src="../assets/ISTRA.png" style="width: 450px;"></v-img>
+            </center>
         </v-card>
 
         <!-- 3️⃣ TREĆA GALERIJA -->
-        <v-card elevation="11" outlined shaped tile class="sirinaVueCard2">
+        <v-card elevation="11" outlined shaped tile class="sirinaVueCard2" style="margin-bottom: 30px;">
             <v-card-title>Attractions in Pješčana Uvala 🏖️</v-card-title>
             <v-card-subtitle>In Pješčana Uvala, there are many attractive things.</v-card-subtitle>
             <v-card-text :class="{ 'text-truncated3': !expanded3 }" :style="{ maxHeight: expanded3 ? 'none' : '250px', overflow: expanded3 ? 'visible' : 'hidden' }">From restaurants, cafés, beach bars, shops, children's playgrounds, sports fields...</v-card-text>

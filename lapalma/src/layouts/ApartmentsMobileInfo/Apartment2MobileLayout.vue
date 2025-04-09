@@ -19,9 +19,9 @@
                     </v-container>
                         <v-card-text>For more information, feel free to contact us via:</v-card-text>
                        <center>
-                            <v-icon class="icons" style="padding: 10px;">mdi-whatsapp</v-icon>
-                            <v-icon class="icons" style="padding: 10px;">mdi-phone</v-icon>
-                            <v-icon class="icons" style="padding: 10px;">mdi-email-outline</v-icon>
+                            <v-icon @click="openWhatsApp()" class="icons" style="padding: 10px;">mdi-whatsapp</v-icon>
+                            <v-icon @click="sendSMS()" class="icons" style="padding: 10px;">mdi-phone</v-icon>
+                            <v-icon @click="sendEmail()" class="icons" style="padding: 10px;">mdi-email-outline</v-icon>
                             <br>
                             <v-btn to="/apartments" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
                        </center> 
@@ -63,3 +63,31 @@
     scale: 1.4;
 }
 </style>
+
+<script>
+export default{
+    data(){
+
+    },
+    methods:{
+        sendEmail() {
+        const email = "info@example.com";
+        const subject = "Inquiry about Apartment 2";
+        const body = "I am interested in apartment 2! Please send me more information.";
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+        },
+        openWhatsApp() {
+        const phoneNumber = "+385993427477";
+        const message = "I am interested in apartment 2!";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+        },
+        sendSMS() {
+        const phoneNumber = "+385993427477";
+        const message = "I am interested in apartment 2!";
+        window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+        }
+    }
+}
+</script>

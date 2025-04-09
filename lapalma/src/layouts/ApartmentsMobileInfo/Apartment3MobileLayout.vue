@@ -63,3 +63,31 @@
     scale: 1.4;
 }
 </style>
+
+<script>
+export default{
+    data(){
+
+    },
+    methods:{
+        sendEmail() {
+        const email = "info@example.com";
+        const subject = "Inquiry about Apartment 3";
+        const body = "I am interested in apartment 3! Please send me more information.";
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+        },
+        openWhatsApp() {
+        const phoneNumber = "+385993427477";
+        const message = "I am interested in apartment 3!";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+        },
+        sendSMS() {
+        const phoneNumber = "+385993427477";
+        const message = "I am interested in apartment 3!";
+        window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+        }
+    }
+}
+</script>
