@@ -440,7 +440,7 @@ export default {
       window.open(url, "_blank");
     },
     sendGmail() {
-      const email = "info@example.com"; // Zamijeni pravom e-mail adresom
+      const email = "croatiavacation05@gmail.com"; // Zamijeni pravom e-mail adresom
       const subject = "Inquiry about Apartment 1";
       const body = "I am interested in apartment 1! Please send me more information.";
       const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -453,7 +453,7 @@ export default {
       window.open(url, "_blank");
     },
     sendGmail2() {
-      const email = "info@example.com"; // Zamijeni pravom e-mail adresom
+      const email = "croatiavacation05@gmail.com"; // Zamijeni pravom e-mail adresom
       const subject = "Inquiry about Apartment 2";
       const body = "I am interested in apartment 2! Please send me more information.";
       const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -466,7 +466,7 @@ export default {
       window.open(url, "_blank");
     },
     sendGmail3() {
-      const email = "info@example.com"; // Zamijeni pravom e-mail adresom
+      const email = "croatiavacation05@gmail.com"; // Zamijeni pravom e-mail adresom
       const subject = "Inquiry about Apartment 3";
       const body = "I am interested in apartment 3! Please send me more information.";
       const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
