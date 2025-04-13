@@ -113,6 +113,22 @@
             ></v-img>
         </v-card>
 
+        <v-card elevation="11" outlined shaped tile class="sirinaVueCard2" style="margin-bottom: 30px;">
+            <v-card-title>Attractions in Pula!</v-card-title>
+            <v-card-subtitle></v-card-subtitle>
+            <v-card-text :class="{ 'text-truncated3': !expanded3 }" :style="{ maxHeight: expanded3 ? 'none' : '250px', overflow: expanded3 ? 'visible' : 'hidden' }">
+                During your stay in Pula, you’ll find a wide range of attractions to explore — from dolphin watching to visiting the famous 
+                Roman amphitheater and much more. Discover all the experiences waiting for you by checking out the link below.
+            </v-card-text>
+            <v-card-text><a href="https://www.getyourguide.com/s?locale=en&currency=EUR&src=&surface=&funnel=&google_ads_click_source=tpa&product_id=265027&option_id=459567&ttdwk16=16&et=265027&lc=344&cq_src=google_ads&cq_cmp=22155515416&cq_con=174020899379&cq_term=&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=22155515416&adgroup_id=174020899379&target_id=kwd-2461000167287&loc_physical_ms=1028857&match_type=&ad_id=730014736992&keyword=&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gbraid=0AAAAADmzJCM5XM-FMazvG7HTxsq8hZ16l&gclid=EAIaIQobChMIi4mk8v3UjAMVRk1BAh0UPjOPEAQYASABEgIAuPD_BwE">
+                          LINK</a></v-card-text>
+            <v-img 
+                src="../assets/aip.jpg" 
+                class="clickable-image"
+                @click="openGallery(7, 'Attractions in Pula')"
+            ></v-img>
+        </v-card>
+
         <!-- 🔍 GALERIJA -->
         <v-dialog v-if="selectedImages.length" v-model="showGallery" max-width="600px">
             <v-card>
@@ -158,6 +174,7 @@ export default {
         [ require('@/assets/rtkamenjak1.jpg'), require('@/assets/rtkamenjak2.jpg'), require('@/assets/rtkamenjak3.jpg'), require('@/assets/rtkamenjak4.jpeg') ],
         [ require('@/assets/rovinj1.jpg'), require('@/assets/rovinj2.jpg'), require('@/assets/rovinj3.jpg'), require('@/assets/rovinj4.jpeg') ],
         [ require('@/assets/lk1.jpg'), require('@/assets/lk2.jpg'), require('@/assets/lk3.jpg'), require('@/assets/lk4.jpg'), require('@/assets/lk5.jpg') ],
+        [ require('@/assets/aip.jpg'), require('@/assets/aip2.jpg'), require('@/assets/aip3.jpg'), require('@/assets/aip4.jpg'), require('@/assets/aip5.jpg')],
       ]
     };
   },
