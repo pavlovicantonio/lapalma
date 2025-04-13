@@ -114,7 +114,7 @@
         </v-card>
 
         <v-card elevation="11" outlined shaped tile class="sirinaVueCard2" style="margin-bottom: 30px;">
-            <v-card-title>Attractions in Pula!</v-card-title>
+            <v-card-title>Attractions in Pula 🐬!</v-card-title>
             <v-card-subtitle></v-card-subtitle>
             <v-card-text :class="{ 'text-truncated3': !expanded3 }" :style="{ maxHeight: expanded3 ? 'none' : '250px', overflow: expanded3 ? 'visible' : 'hidden' }">
                 During your stay in Pula, you’ll find a wide range of attractions to explore — from dolphin watching to visiting the famous 

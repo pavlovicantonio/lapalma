@@ -20,6 +20,10 @@
         <v-icon style="color: white;">mdi-home-city</v-icon>
         <span style="color: white;">Apartments</span>
       </v-btn>
+      <v-btn to="/apartments" style="background-color: #2c7ccc;">
+        <v-icon style="color: white;">mdi-information</v-icon>
+        <span style="color: white;">Info</span>
+      </v-btn>
     </v-bottom-navigation>
   </v-app>
 </template>
