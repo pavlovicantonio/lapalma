@@ -12,7 +12,7 @@
       <!-- Prva slika lijevo, najveća -->
       <v-col cols="12" md="6">
         <v-img
-          src="https://picsum.photos/300"
+          src="../assets/apartment1p1.jpg"
           alt="Large Image"
           height="300px"
           width="300px"
@@ -26,7 +26,7 @@
         <v-row>
           <v-col cols="12">
             <v-img
-              src="https://picsum.photos/300/150"
+              src="../assets/apartment1p2.jpg"
               alt="Small Image 1"
               height="138px"
               width="300px"
@@ -36,7 +36,7 @@
           </v-col>
           <v-col cols="12">
             <v-img
-              src="https://picsum.photos/300/150"
+              src="../assets/apartment1p3.jpg"
               alt="Small Image 2"
               height="138px"
               width="300px"
@@ -124,12 +124,12 @@
       <!-- Prva slika lijevo, najveća -->
       <v-col cols="12" md="6">
         <v-img
-          src="https://picsum.photos/300"
+          src="../assets/apartment2p1.jpg"
           alt="Large Image"
           height="300px"
           width="300px"
           class="clickable-image"
-          @click="openGallery(1, 'Apartment 1')"
+          @click="openGallery(2, 'Apartment 2')"
         ></v-img>
       </v-col>
 
@@ -138,12 +138,12 @@
         <v-row>
           <v-col cols="12">
             <v-img
-              src="https://picsum.photos/300/150"
+              src="../assets/apartment2p2.jpg"
               alt="Small Image 1"
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(1, 'Apartment 1')"
+              @click="openGallery(2, 'Apartment 2')"
             ></v-img>
           </v-col>
           <v-col cols="12">
@@ -153,7 +153,7 @@
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(1, 'Apartment 1')"
+              @click="openGallery(2, 'Apartment 2')"
             ></v-img>
           </v-col>
         </v-row>
@@ -236,12 +236,12 @@
     
       <v-col cols="12" md="6">
         <v-img
-          src="https://picsum.photos/300"
+          src="../assets/apartment3p1.jpg"
           alt="Large Image"
           height="300px"
           width="300px"
           class="clickable-image"
-          @click="openGallery(1, 'Apartment 1')"
+          @click="openGallery(3, 'Apartment 3')"
         ></v-img>
       </v-col>
 
@@ -249,22 +249,22 @@
         <v-row>
           <v-col cols="12">
             <v-img
-              src="https://picsum.photos/300/150"
+              src="../assets/apartment3p2.jpg"
               alt="Small Image 1"
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(1, 'Apartment 1')"
+              @click="openGallery(3, 'Apartment 3')"
             ></v-img>
           </v-col>
           <v-col cols="12">
             <v-img
-              src="https://picsum.photos/300/150"
+              src="../assets/apartment3p3.jpg"
               alt="Small Image 2"
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(1, 'Apartment 1')"
+              @click="openGallery(3, 'Apartment 3')"
             ></v-img>
           </v-col>
         </v-row>
@@ -383,9 +383,9 @@ export default {
       // 📷 Svaka kartica ima svoju galeriju
       galleries: [
         [ require('@/assets/apartmentspic1.jpg'), require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic9.jpg')],
-        [ require('@/assets/apartmentspic2.jpg'), require('@/assets/backgroundimage.jpg'), require('@/assets/apartmentspic5.jpg'), require('@/assets/apartmentspic7.jpg'), require('@/assets/apartmentspic10.jpg') ],
-        [ require('@/assets/beachbar1.jpg'), require('@/assets/beachbar2.jpg'), require('@/assets/restaurant1.jpg'), require('@/assets/restaurant2.jpg'), require('@/assets/restaurant3.jpg') ],
-        [ require('@/assets/brijuni1.jpg'), require('@/assets/brijuni2.jpg'), require('@/assets/brijuni3.jpeg'), require('@/assets/brijuni4.jpg') ],
+        [ require('@/assets/apartment1p1.jpg'), require('@/assets/apartment1p2.jpg'), require('@/assets/apartment1p3.jpg'), require('@/assets/apartment1p4.jpg'), require('@/assets/apartment1p5.jpg') ],
+        [ require('@/assets/apartment2p1.jpg'), require('@/assets/apartment2p2.jpg') ],
+        [ require('@/assets/apartment3p1.jpg'), require('@/assets/apartment3p2.jpg'), require('@/assets/apartment3p3.jpg'), require('@/assets/apartment3p4.jpg'), require('@/assets/apartment3p5.jpg'), require('@/assets/apartment3p6.jpg') ],
         [ require('@/assets/rtkamenjak1.jpg'), require('@/assets/rtkamenjak2.jpg'), require('@/assets/rtkamenjak3.jpg'), require('@/assets/rtkamenjak4.jpeg') ],
         [ require('@/assets/rovinj1.jpg'), require('@/assets/rovinj2.jpg'), require('@/assets/rovinj3.jpg'), require('@/assets/rovinj4.jpeg') ],
         [ require('@/assets/limskikanal1.jpg'), require('@/assets/limskikanal2.jpg'), require('@/assets/limskikanal3.jpg'), require('@/assets/limskikanal4.jpg') ],

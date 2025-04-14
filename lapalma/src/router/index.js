@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import DesktopLayout from '../layouts/DesktopLayout.vue';
 import ApartmentsDesktopLayout from '../layouts/ApartmentsDesktopLayout.vue';
 import Apartment1DesktopLayout from '@/layouts/ApartmentsDesktopLayouts/Apartment1DesktopLayout.vue';
+import InfoDesktopLayout from '@/layouts/InfoDesktopLayout.vue';
 
 Vue.use(VueRouter);
 
@@ -31,6 +32,11 @@ const routes = [
     path: '/apartment3',
     name: 'apartment3',
     component: Apartment1DesktopLayout
+  },
+  {
+    path: '/info',
+    name: 'info',
+    component: InfoDesktopLayout
   }
 ];
 

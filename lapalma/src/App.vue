@@ -8,6 +8,7 @@
       <v-spacer></v-spacer>
       <v-btn text to="/">Home</v-btn>
       <v-btn text to="/apartments">Apartments</v-btn>
+      <v-btn text to="/info">Info</v-btn>
     </v-app-bar>
 
     <!-- Navigacija za mobilne uređaje -->
@@ -20,7 +21,7 @@
         <v-icon style="color: white;">mdi-home-city</v-icon>
         <span style="color: white;">Apartments</span>
       </v-btn>
-      <v-btn to="/apartments" style="background-color: #2c7ccc;">
+      <v-btn to="/info" style="background-color: #2c7ccc;">
         <v-icon style="color: white;">mdi-information</v-icon>
         <span style="color: white;">Info</span>
       </v-btn>
@@ -37,6 +38,8 @@ import Apartment1DesktopLayout from "@/layouts/ApartmentsDesktopLayouts/Apartmen
 import Apartment1MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment1MobileLayout.vue";
 import Apartment2MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment2MobileLayout.vue";
 import Apartment3MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment3MobileLayout.vue";
+import InfoDesktopLayout from "./layouts/InfoDesktopLayout.vue";
+import InfoMobileLayout from "./layouts/InfoMobileLayout.vue";
 
 export default {
   name: "App",
@@ -48,7 +51,9 @@ export default {
     Apartment1DesktopLayout,
     Apartment1MobileLayout,
     Apartment2MobileLayout,
-    Apartment3MobileLayout
+    Apartment3MobileLayout,
+    InfoDesktopLayout,
+    InfoMobileLayout
   },
   data() {
     return {
@@ -61,7 +66,8 @@ export default {
         "/apartments": this.isMobile ? ApartmentsMobileLayout : ApartmentsDesktopLayout,
         "/apartment1": this.isMobile ? Apartment1MobileLayout : Apartment1DesktopLayout,
         "/apartment2": this.isMobile ? Apartment2MobileLayout : Apartment1DesktopLayout,
-        "/apartment3": this.isMobile ? Apartment3MobileLayout : Apartment1DesktopLayout
+        "/apartment3": this.isMobile ? Apartment3MobileLayout : Apartment1DesktopLayout,
+        "/info": this.isMobile ? InfoMobileLayout : InfoDesktopLayout,
       };
 
       return layouts[this.$route.path] || (this.isMobile ? MobileLayout : DesktopLayout);
