@@ -22,7 +22,8 @@
               <br>
               <br>
               <h1 style="font-size: 18px; padding-left: 15px; padding-right: 15px;">Feel free to send an inquiry if you have any questions</h1>
-              <v-form @submit.prevent="submitForm" ref="form" v-model="valid" style="background-color: white; margin-left: 20px; margin-bottom: 40px; margin-top: 30px; width: 300px;">
+              <center>
+              <v-form @submit.prevent="submitForm" ref="form" v-model="valid" style="background-color: white; margin-bottom: 40px; margin-top: 30px; width: 300px;">
                   <v-text-field v-model="form.fullName" label="First and last name" :rules="[rules.required]" required></v-text-field>
                   <v-text-field v-model="form.phone" label="Mobile number" :rules="[rules.required]" required></v-text-field>
                   <v-text-field v-model="form.country" label="Where are you from" :rules="[rules.required]" required></v-text-field>
@@ -32,6 +33,7 @@
                   <v-btn type="submit" color="light-blue" style="color: white;" elevation="2">Send</v-btn>
                   </center>
               </v-form>
+              </center>
       </v-card>
         </div>
     </div>
