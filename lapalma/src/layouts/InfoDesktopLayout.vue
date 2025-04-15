@@ -20,7 +20,7 @@
                   </v-expansion-panels>
               </div>
               
-              <v-form @submit.prevent="submitForm" ref="form" v-model="valid" style="background-color: white; margin-left: 20px; width: 300px;">
+              <v-form @submit.prevent="submitForm" ref="form" v-model="valid" style="background-color: white; margin-left: 20px; width: 90%;">
                   <v-text-field v-model="form.fullName" label="First and last name" :rules="[rules.required]" required></v-text-field>
                   <v-text-field v-model="form.phone" label="Mobile number" :rules="[rules.required]" required></v-text-field>
                   <v-text-field v-model="form.country" label="Where are you from" :rules="[rules.required]" required></v-text-field>
