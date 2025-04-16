@@ -7,7 +7,7 @@
             <center>
                 <div>
                     <v-card elevation="11" outlined shaped tile class="vueCard1">
-                        <v-card-title style="font-size: 15px; text-align: center;">La Palma Apartments 🌴</v-card-title>
+                        <v-card-title style="font-size: 15px;">La Palma Apartments 🌴</v-card-title>
                         <v-card-subtitle style="font-size: 13px;">Discover Our Exclusive Offer – Three Unique Apartments Just for You!</v-card-subtitle>
                         <v-card-text :class="{ 'text-truncated1': !expanded1 }" :style="{ maxHeight: expanded1 ? 'none' : '250px', overflow: expanded1 ? 'visible' : 'hidden' }" class="v-text1">
                             Escape to a place where comfort meets paradise. La Palma Apartments offer the perfect retreat 
