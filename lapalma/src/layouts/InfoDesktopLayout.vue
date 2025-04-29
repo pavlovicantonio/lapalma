@@ -1,36 +1,42 @@
 <template>
   <div class="none">
-      <center>
+    <center>
       <div class="padmarg"></div>
 
-      <!-- 1️⃣ PRVA GALERIJA -->
-      <v-card elevation="11" outlined shaped class="sirinaVueCardss1" color="white" style="border-radius: 30px; margin-bottom: 40px;">
-          <v-card-title class="d-flex justify-center align-center">
+      <v-row class="d-flex justify-center" no-gutters>
+        <!-- FAQ sekcija -->
+        <v-col cols="12" md="6" class="pa-4">
+          <v-card elevation="11" outlined shaped color="white" style="border-radius: 30px;">
+            <v-card-title class="d-flex justify-center align-center">
               FREQUENTLY ASKED QUESTIONS
-          </v-card-title>
+            </v-card-title>
+            <v-expansion-panels>
+              <v-expansion-panel v-for="(item, index) in faqList" :key="index">
+                <v-expansion-panel-header class="question">{{ item.question }}</v-expansion-panel-header>
+                <v-expansion-panel-content class="answer">{{ item.answer }}</v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
+          </v-card>
+        </v-col>
 
-          <!-- Ovo je kontejner koji ih drži u redu -->
-          <div class="d-flex">
-              <div class="questions">
-                  <v-expansion-panels>
-                      <v-expansion-panel v-for="(item, index) in faqList" :key="index">
-                          <v-expansion-panel-header class="question">{{ item.question }}</v-expansion-panel-header>
-                          <v-expansion-panel-content class="answer">{{ item.answer }}</v-expansion-panel-content>
-                      </v-expansion-panel>
-                  </v-expansion-panels>
-              </div>
-              
-              <v-form @submit.prevent="submitForm" ref="form" v-model="valid" style="background-color: white; margin-left: 20px; width: 90%;">
-                  <v-text-field v-model="form.fullName" label="First and last name" :rules="[rules.required]" required></v-text-field>
-                  <v-text-field v-model="form.phone" label="Mobile number" :rules="[rules.required]" required></v-text-field>
-                  <v-text-field v-model="form.country" label="Where are you from" :rules="[rules.required]" required></v-text-field>
-                  <v-text-field v-model="form.email" label="Email" :rules="[rules.required, rules.email]" required></v-text-field>
-                  <v-textarea v-model="form.question" label="What are you interested in?" :rules="[rules.required]" required></v-textarea>
-                  <v-btn type="submit" color="light-blue" style="color: white;" elevation="2">Send</v-btn>
-              </v-form>
-          </div>
-      </v-card>
-    </center> 
+        <!-- Kontakt forma -->
+        <v-col cols="12" md="6" class="pa-4">
+          <v-card elevation="11" outlined shaped color="white" style="border-radius: 30px; max-width: 500px;">
+            <v-card-title class="d-flex justify-center align-center">
+              Feel free to send an inquiry if you have any questions
+            </v-card-title>
+            <v-form @submit.prevent="submitForm" ref="form" v-model="valid">
+              <v-text-field v-model="form.fullName" label="First and last name" :rules="[rules.required]" required />
+              <v-text-field v-model="form.phone" label="Mobile number" :rules="[rules.required]" required />
+              <v-text-field v-model="form.country" label="Where are you from" :rules="[rules.required]" required />
+              <v-text-field v-model="form.email" label="Email" :rules="[rules.required, rules.email]" required />
+              <v-textarea v-model="form.question" label="What are you interested in?" :rules="[rules.required]" required />
+              <v-btn type="submit" color="light-blue" elevation="2" block>Send</v-btn>
+            </v-form>
+          </v-card>
+        </v-col>
+      </v-row>
+    </center>
   </div>
 </template>
 
