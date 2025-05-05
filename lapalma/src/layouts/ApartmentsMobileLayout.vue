@@ -116,7 +116,7 @@
                     <v-card>
                         <v-card-title>{{ galleryTitle }}</v-card-title>
                         <v-card-text>
-                            <v-carousel v-model="currentImage" :height="$vuetify.breakpoint.smAndDown ? '250px' : '450px'">
+                            <v-carousel v-model="currentImage" :height="$vuetify.breakpoint.smAndDown ? '250px' : '450px'" hide-delimiters>
                                 <v-carousel-item 
                                     v-for="(img, index) in selectedImages" 
                                     :key="index" 
@@ -149,9 +149,9 @@ export default {
       // 📷 Svaka kartica ima svoju galeriju
       galleries: [
         [ require('@/assets/apartmentspic1.jpg'), require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic9.jpg')],
-        [ require('@/assets/apartment1p1.jpg'), require('@/assets/apartment1p2.jpg'), require('@/assets/apartment1p3.jpg'), require('@/assets/apartment1p4.jpg'), require('@/assets/apartment1p5.jpg') ],
-        [ require('@/assets/apartment2p1.jpg'), require('@/assets/apartment2p2.jpg') ],
-        [ require('@/assets/apartment3p1.jpg'), require('@/assets/apartment3p2.jpg'), require('@/assets/apartment3p3.jpg'), require('@/assets/apartment3p4.jpg'), require('@/assets/apartment3p5.jpg'), require('@/assets/apartment3p6.jpg') ],
+        [ require('@/assets/apartment1p1.jpg'), require('@/assets/apartment1p2.jpg'), require('@/assets/apartment1p3.jpg'), require('@/assets/apartment1p4.jpg'), require('@/assets/apartment1p5.jpg'), require('@/assets/apartment1p6.jpg') ],
+        [ require('@/assets/apartment2p1.jpg'), require('@/assets/apartment2p2.jpg'), require('@/assets/apartment2p3.jpg'), require('@/assets/apartment2p4.jpg') ],
+        [ require('@/assets/apartment3p1.jpg'), require('@/assets/apartment3p5.jpg'), require('@/assets/apartment3p3.jpg'), require('@/assets/apartment3p4.jpg'), require('@/assets/apartment3p6.jpg'), require('@/assets/apartment3p7.jpg'), require('@/assets/apartment3p8.jpg') ],
         [ require('@/assets/rtkamenjak1.jpg'), require('@/assets/rtkamenjak2.jpg'), require('@/assets/rtkamenjak3.jpg'), require('@/assets/rtkamenjak4.jpeg') ],
         [ require('@/assets/rovinj1.jpg'), require('@/assets/rovinj2.jpg'), require('@/assets/rovinj3.jpg'), require('@/assets/rovinj4.jpeg') ],
         [ require('@/assets/limskikanal1.jpg'), require('@/assets/limskikanal2.jpg'), require('@/assets/limskikanal3.jpg'), require('@/assets/limskikanal4.jpg') ],
@@ -186,10 +186,24 @@ export default {
     z-index: 2;
 }
 .AML_secondDiv{
-    background-color: #F5ECD5;
+    position: relative;
     width: 100vw;
-    height: auto;
-    z-index: 0;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+.AML_secondDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('@/assets/backgroundimage.jpg');
+  background-repeat: repeat-y;
+  background-size: cover;
+  filter: blur(8px); /* postavi intenzitet zamućenja ovdje */
+  z-index: -1;
 }
 .AML_vueCard1{
     width:70%;

@@ -150,7 +150,7 @@
           </v-col>
           <v-col cols="12">
             <v-img
-              src="https://picsum.photos/300/150"
+              src="../assets/apartment2p3.jpg"
               alt="Small Image 2"
               height="138px"
               width="300px"
@@ -349,7 +349,7 @@
             <v-card>
                 <v-card-title>{{ galleryTitle }}</v-card-title>
                 <v-card-text>
-                    <v-carousel v-model="currentImage">
+                    <v-carousel v-model="currentImage" hide-delimiters>
                         <v-carousel-item 
                             v-for="(img, index) in selectedImages" 
                             :key="index" 
@@ -437,9 +437,9 @@ export default {
       // 📷 Svaka kartica ima svoju galeriju
       galleries: [
         [ require('@/assets/apartmentspic1.jpg'), require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic9.jpg')],
-        [ require('@/assets/apartment1p1.jpg'), require('@/assets/apartment1p2.jpg'), require('@/assets/apartment1p3.jpg'), require('@/assets/apartment1p4.jpg'), require('@/assets/apartment1p5.jpg') ],
-        [ require('@/assets/apartment2p1.jpg'), require('@/assets/apartment2p2.jpg') ],
-        [ require('@/assets/apartment3p1.jpg'), require('@/assets/apartment3p2.jpg'), require('@/assets/apartment3p3.jpg'), require('@/assets/apartment3p4.jpg'), require('@/assets/apartment3p5.jpg'), require('@/assets/apartment3p6.jpg') ],
+        [ require('@/assets/apartment1p1.jpg'), require('@/assets/apartment1p2.jpg'), require('@/assets/apartment1p3.jpg'), require('@/assets/apartment1p4.jpg'), require('@/assets/apartment1p5.jpg'), require('@/assets/apartment1p6.jpg') ],
+        [ require('@/assets/apartment2p1.jpg'), require('@/assets/apartment2p2.jpg'), require('@/assets/apartment2p3.jpg'), require('@/assets/apartment2p4.jpg') ],
+        [ require('@/assets/apartment3p1.jpg'), require('@/assets/apartment3p5.jpg'), require('@/assets/apartment3p3.jpg'), require('@/assets/apartment3p4.jpg'), require('@/assets/apartment3p6.jpg'), require('@/assets/apartment3p7.jpg'), require('@/assets/apartment3p8.jpg') ],
         [ require('@/assets/rtkamenjak1.jpg'), require('@/assets/rtkamenjak2.jpg'), require('@/assets/rtkamenjak3.jpg'), require('@/assets/rtkamenjak4.jpeg') ],
         [ require('@/assets/rovinj1.jpg'), require('@/assets/rovinj2.jpg'), require('@/assets/rovinj3.jpg'), require('@/assets/rovinj4.jpeg') ],
         [ require('@/assets/limskikanal1.jpg'), require('@/assets/limskikanal2.jpg'), require('@/assets/limskikanal3.jpg'), require('@/assets/limskikanal4.jpg') ],

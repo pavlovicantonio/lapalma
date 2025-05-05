@@ -145,7 +145,7 @@
                     <v-card>
                         <v-card-title>{{ galleryTitle }}</v-card-title>
                         <v-card-text>
-                            <v-carousel v-model="currentImage" :height="$vuetify.breakpoint.smAndDown ? '250px' : '450px'">
+                            <v-carousel v-model="currentImage" :height="$vuetify.breakpoint.smAndDown ? '250px' : '450px'" hide-delimiters>
                                 <v-carousel-item 
                                     v-for="(img, index) in selectedImages" 
                                     :key="index" 
@@ -224,10 +224,30 @@ export default {
     z-index: 2;
 }
 .secondDiv {
-  background-color: #F5ECD5;
   width: 100vw;
   height: 100%;
   z-index: 0;
+}
+.secondDiv {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.secondDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('@/assets/backgroundimage.jpg');
+  background-repeat: repeat-y;
+  background-size: cover;
+  filter: blur(8px); /* postavi intenzitet zamućenja ovdje */
+  z-index: -1;
 }
 
 .vueCard1{

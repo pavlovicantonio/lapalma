@@ -134,7 +134,7 @@
             <v-card>
                 <v-card-title>{{ galleryTitle }}</v-card-title>
                 <v-card-text>
-                    <v-carousel v-model="currentImage">
+                    <v-carousel v-model="currentImage" hide-delimiters>
                         <v-carousel-item 
                             v-for="(img, index) in selectedImages" 
                             :key="index" 
