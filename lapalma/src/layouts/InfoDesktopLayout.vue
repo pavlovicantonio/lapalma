@@ -124,7 +124,7 @@ export default {
       snackbarMessage: '', // Tekst obavijesti
       snackbarColor: '', // Boja obavijesti (zeleni, crveni...)
       faqList: [
-        { question: "How to book an apartment?", answer: "You can book the apartment via Booking, or contact us through the form." },
+        { question: "How to book an apartment?", answer: "You can book the apartment via apartment section, or contact us through the form right." },
         { question: "Is Wi-Fi available?", answer: "Yes, all apartments have free high-speed Wi-Fi." },
         { question: "Is the beach nearby?", answer: "Yes, the beach is just a 3-minute walk away." },
         { question: "Is free parking available?", answer: "Yes, each apartment comes with one free parking spot." },
