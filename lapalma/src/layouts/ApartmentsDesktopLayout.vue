@@ -64,8 +64,8 @@
                         <span class="ml-2" style="font-size: 13px;">TV</span>
                     </v-col>
                     <v-col cols="3" class="d-flex align-center">
-                        <v-icon>mdi-human-male-female</v-icon>
-                        <span class="ml-2" style="font-size: 13px;">Max. 4</span>
+                        <v-icon>mdi-toilet</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Toilet</span>
                     </v-col>
                 </v-row>
 
@@ -96,21 +96,20 @@
         <v-card class="sirinaVueCards1-1" :style="{ zIndex: zIndex2}">
             <v-card-title>Apartment 1 INFO</v-card-title>
             <v-container style="text-align: left;">
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 50m², 2 Bedrooms, 1 Bathroom</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Capacity:</b> Up to 4 guests</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Outdoor:</b> Balcony, Terrace, Garden, BBQ</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>View:</b> Sea view, Garden view, City view</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Parking:</b> Private parking, Free street parking</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed/not allowed</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 50m</v-card-text>
                     </v-container>
                     <v-container style="margin-top: 35px;">
                         <v-card-text>For more information, feel free to contact us via:</v-card-text>
                        <center>
-                            <v-icon @click="openWhatsApp()" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
-                            <v-icon @click="sendGmail()" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
-                            <v-icon class="icons" size="36" style="padding: 20px;">mdi-instagram</v-icon>
+                            <v-icon @click="openWhatsApp(1)" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
+                            <v-icon @click="sendGmail(1)" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
+                            <a href="https://www.instagram.com/croatiadreamholidayy/" target="_blank"><v-icon class="icons" size="36" style="padding: 20px;">mdi-instagram</v-icon></a>
                             <v-icon class="icons" size="36" style="padding: 20px;">mdi-facebook</v-icon>
                             <br>
                             <v-btn @click="swapZIndex()" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
@@ -178,8 +177,8 @@
                         <span class="ml-2" style="font-size: 13px;">TV</span>
                     </v-col>
                     <v-col cols="3" class="d-flex align-center">
-                        <v-icon>mdi-human-male-female</v-icon>
-                        <span class="ml-2" style="font-size: 13px;">Max. 4</span>
+                        <v-icon>mdi-toilet</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Toilet</span>
                     </v-col>
                 </v-row>
 
@@ -210,21 +209,20 @@
         <v-card class="sirinaVueCards1-2" :style="{ zIndex: zIndex4}">
             <v-card-title>Apartment 2 INFO</v-card-title>
             <v-container style="text-align: left;">
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 50m², 2 Bedrooms, 1 Bathroom</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Capacity:</b> Up to 4 guests</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Outdoor:</b> Balcony, Terrace, Garden, BBQ</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>View:</b> Sea view, Garden view, City view</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Outdoor:</b> Terrace, Garden, BBQ</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>View:</b> Church view, Garden view, City view</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Parking:</b> Private parking, Free street parking</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed/not allowed</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 50m</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 100m</v-card-text>
                     </v-container>
                     <v-container style="margin-top: 35px;">
                         <v-card-text>For more information, feel free to contact us via:</v-card-text>
                        <center>
-                            <v-icon @click="openWhatsApp2()" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
-                            <v-icon @click="sendGmail2()" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
-                            <v-icon class="icons" size="36" style="padding: 20px;">mdi-instagram</v-icon>
+                            <v-icon @click="openWhatsApp(2)" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
+                            <v-icon @click="sendGmail(2)" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
+                            <a href="https://www.instagram.com/croatiadreamholidayy/" target="_blank"><v-icon class="icons" size="36" style="padding: 20px;">mdi-instagram</v-icon></a>
                             <v-icon class="icons" size="36" style="padding: 20px;">mdi-facebook</v-icon>
                             <br>
                             <v-btn @click="swapZIndex2()" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
@@ -291,8 +289,8 @@
                         <span class="ml-2" style="font-size: 13px;">TV</span>
                     </v-col>
                     <v-col cols="3" class="d-flex align-center">
-                        <v-icon>mdi-human-male-female</v-icon>
-                        <span class="ml-2" style="font-size: 13px;">Max. 4</span>
+                        <v-icon>mdi-toilet</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Toilet</span>
                     </v-col>
                 </v-row>
 
@@ -322,24 +320,136 @@
         <v-card class="sirinaVueCards1-3" :style="{ zIndex: zIndex6}">
             <v-card-title>Apartment 3 INFO</v-card-title>
             <v-container style="text-align: left;">
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 50m², 2 Bedrooms, 1 Bathroom</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Capacity:</b> Up to 4 guests</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Outdoor:</b> Balcony, Terrace, Garden, BBQ</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>View:</b> Sea view, Garden view, City view</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Parking:</b> Private parking, Free street parking</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed/not allowed</v-card-text>
-                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 50m</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 10m</v-card-text>
                     </v-container>
                     <v-container style="margin-top: 35px;">
                         <v-card-text>For more information, feel free to contact us via:</v-card-text>
                        <center>
-                            <v-icon @click="openWhatsApp3()" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
-                            <v-icon @click="sendGmail3()" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
-                            <v-icon class="icons" size="36" style="padding: 20px;">mdi-instagram</v-icon>
+                            <v-icon @click="openWhatsApp(3)" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
+                            <v-icon @click="sendGmail(3)" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
+                            <a href="https://www.instagram.com/croatiadreamholidayy/" target="_blank"><v-icon class="icons" size="36" style="padding: 20px;">mdi-instagram</v-icon></a>
                             <v-icon class="icons" size="36" style="padding: 20px;">mdi-facebook</v-icon>
                             <br>
                             <v-btn @click="swapZIndex3()" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
+                       </center> 
+                    </v-container>
+        </v-card>
+
+
+        <v-card elevation="11" outlined shaped tile class="sirinaVueCards4" :style="{ zIndex: zIndex7}">
+            <v-card-title>Apartment 4</v-card-title>
+            <v-container>
+                <v-container>
+    <v-row>
+    
+      <v-col cols="12" md="6">
+        <v-img
+          src="../assets/apartment4p1.jpg"
+          alt="Large Image"
+          height="300px"
+          width="300px"
+          class="clickable-image"
+          @click="openGallery(4, 'Apartment 4')"
+        ></v-img>
+      </v-col>
+
+      <v-col cols="12" md="6">
+        <v-row>
+          <v-col cols="12">
+            <v-img
+              src="../assets/apartment4p2.jpg"
+              alt="Small Image 1"
+              height="138px"
+              width="300px"
+              class="clickable-image"
+              @click="openGallery(4, 'Apartment 4')"
+            ></v-img>
+          </v-col>
+          <v-col cols="12">
+            <v-img
+              src="../assets/apartment4p3.jpg"
+              alt="Small Image 2"
+              height="138px"
+              width="300px"
+              class="clickable-image"
+              @click="openGallery(4, 'Apartment 4')"
+            ></v-img>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
+            </v-container>
+           <v-container>
+                <v-row align="center">
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-wifi</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Wifi</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-parking</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Parking</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-television</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">TV</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-toilet</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Toilet</span>
+                    </v-col>
+                </v-row>
+
+                <v-row align="center">
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-pool</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Pool</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-fridge</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Kitchen</span>
+                    </v-col>
+                    <v-col cols="3" class="d-flex align-center">
+                        <v-icon>mdi-dog</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Pets</span>
+                    </v-col>
+                    <v-col cols="2" class="d-flex align-center">
+                        <v-icon>mdi-grill</v-icon>
+                        <span class="ml-2" style="font-size: 13px;">Grill</span>
+                    </v-col>
+                </v-row>
+             </v-container>
+             <center>
+             <v-btn @click="swapZIndex4()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">APARTMENT 4<v-icon>mdi-information</v-icon></v-btn>
+             </center>
+        </v-card>
+
+        <v-card class="sirinaVueCards1-4" :style="{ zIndex: zIndex8}">
+            <v-card-title>Apartment 4 INFO</v-card-title>
+            <v-container style="text-align: left;">
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Outdoor:</b> Balcony, Terrace, Garden, BBQ</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>View:</b> Sea view, Garden view, City view</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Parking:</b> Private parking, Free street parking</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Pet Policy:</b> Pets allowed</v-card-text>
+                        <v-card-text style="font-size: 15px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 100m</v-card-text>
+                    </v-container>
+                    <v-container style="margin-top: 35px;">
+                        <v-card-text>For more information, feel free to contact us via:</v-card-text>
+                       <center>
+                            <v-icon @click="openWhatsApp(4)" class="icons" size="36" style="padding: 20px;">mdi-whatsapp</v-icon>
+                            <v-icon @click="sendGmail(4)" class="icons" size="36" style="padding: 20px;">mdi-email-outline</v-icon>
+                            <a href="https://www.instagram.com/croatiadreamholidayy/" target="_blank"><v-icon class="icons" size="36" style="padding: 20px;">mdi-instagram</v-icon></a>
+                            <v-icon class="icons" size="36" style="padding: 20px;">mdi-facebook</v-icon>
+                            <br>
+                            <v-btn @click="swapZIndex4()" color="red" style="color: white; margin-top: 10px; margin-bottom: 10px;">BACK</v-btn>
                        </center> 
                     </v-container>
         </v-card>
@@ -381,7 +491,7 @@
             ></v-img>
           </div>
           <div style="color: #333;">
-            +38512345678 <br>  
+            +393279431662 <br>  
             croatiavacation05@gmail.com <br>
             Pula, Croatia<br />
           </div>
@@ -391,7 +501,7 @@
         <v-col cols="12" md="4" class="text-center mt-4 mt-md-0">
           <div style="color:#333;">
             © {{ new Date().getFullYear() }} La Palma Apartments<br />
-            Website created by <strong>Antonio Pavlović</strong>
+            Website created by <strong style="color: #1976d2;"><a href="https://pavlovicantonio.netlify.app" target="_blank">Antonio Pavlović</a></strong>
           </div>
         </v-col>
 
@@ -400,10 +510,10 @@
           <v-btn icon href="https://facebook.com" target="_blank">
             <v-icon color="#1976d2">mdi-facebook</v-icon>
           </v-btn>
-          <v-btn icon href="https://instagram.com" target="_blank">
+          <v-btn icon href="https://www.instagram.com/croatiadreamholidayy/" target="_blank">
             <v-icon color="#1976d2">mdi-instagram</v-icon>
           </v-btn>
-          <v-btn icon href="https://facebook.com" target="_blank">
+          <v-btn icon @click="openWhatsApp2()" target="_blank">
             <v-icon color="#1976d2">mdi-whatsapp</v-icon>
           </v-btn>
           <v-btn icon href="https://facebook.com" target="_blank">
@@ -430,6 +540,8 @@ export default {
       zIndex4: 2,
       zIndex5: 5,
       zIndex6: 4,
+      zIndex7: 7,
+      zIndex8: 6,
       currentImage: 0,
       galleryTitle: "",
       selectedImages: [],
@@ -440,6 +552,7 @@ export default {
         [ require('@/assets/apartment1p1.jpg'), require('@/assets/apartment1p2.jpg'), require('@/assets/apartment1p3.jpg'), require('@/assets/apartment1p4.jpg'), require('@/assets/apartment1p5.jpg'), require('@/assets/apartment1p6.jpg') ],
         [ require('@/assets/apartment2p1.jpg'), require('@/assets/apartment2p2.jpg'), require('@/assets/apartment2p3.jpg'), require('@/assets/apartment2p4.jpg') ],
         [ require('@/assets/apartment3p1.jpg'), require('@/assets/apartment3p5.jpg'), require('@/assets/apartment3p3.jpg'), require('@/assets/apartment3p4.jpg'), require('@/assets/apartment3p6.jpg'), require('@/assets/apartment3p7.jpg'), require('@/assets/apartment3p8.jpg') ],
+        [ require('@/assets/apartment4p1.jpg'), require('@/assets/apartment4p2.jpg'), require('@/assets/apartment4p3.jpg'), require('@/assets/apartment4p4.jpg'), require('@/assets/apartment4p6.jpeg'),require('@/assets/apartment4p5.jpg')],
         [ require('@/assets/rtkamenjak1.jpg'), require('@/assets/rtkamenjak2.jpg'), require('@/assets/rtkamenjak3.jpg'), require('@/assets/rtkamenjak4.jpeg') ],
         [ require('@/assets/rovinj1.jpg'), require('@/assets/rovinj2.jpg'), require('@/assets/rovinj3.jpg'), require('@/assets/rovinj4.jpeg') ],
         [ require('@/assets/limskikanal1.jpg'), require('@/assets/limskikanal2.jpg'), require('@/assets/limskikanal3.jpg'), require('@/assets/limskikanal4.jpg') ],
@@ -487,46 +600,38 @@ export default {
         this.zIndex6 -= 1;
       }
     },
-    openWhatsApp() {
-      const phoneNumber = "+385993427477"; // Zamijeni brojem
-      const message = "I%20am%20interested%20in%20apartment%201!"; // Enkodirana poruka
-      const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+    swapZIndex4() {
+      // Zamjena z-index vrijednosti
+      if (this.zIndex7 > this.zIndex8) {
+        this.zIndex7 -= 1;
+        this.zIndex8 += 1;
+      } else {
+        this.zIndex7 += 1;
+        this.zIndex8 -= 1;
+      }
+    },
+    openWhatsApp(apartmentNumber) {
+      const phoneNumber = "393279431662"; // bez + znaka
+      const message = `I am interested in apartment ${apartmentNumber}!`;
+      const encodedMessage = encodeURIComponent(message);
+      const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
       window.open(url, "_blank");
     },
-    sendGmail() {
-      const email = "croatiavacation05@gmail.com"; // Zamijeni pravom e-mail adresom
-      const subject = "Inquiry about Apartment 1";
-      const body = "I am interested in apartment 1! Please send me more information.";
-      const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.open(gmailLink, "_blank");
-    },
+
     openWhatsApp2() {
-      const phoneNumber = "+385993427477"; // Zamijeni brojem
-      const message = "I%20am%20interested%20in%20apartment%202!"; // Enkodirana poruka
+      const phoneNumber = "393279431662";
+      const message = `I%20am%20interested%20in%20your%20apartments!`;
       const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
       window.open(url, "_blank");
     },
-    sendGmail2() {
-      const email = "croatiavacation05@gmail.com"; // Zamijeni pravom e-mail adresom
-      const subject = "Inquiry about Apartment 2";
-      const body = "I am interested in apartment 2! Please send me more information.";
+    sendGmail(apartmentNumber) {
+      const email = "croatiavacation05@gmail.com";
+      const subject = `Inquiry about Apartment ${apartmentNumber}`;
+      const body = `I am interested in apartment ${apartmentNumber}! Please send me more information.`;
       const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.open(gmailLink, "_blank");
     },
-    openWhatsApp3() {
-      const phoneNumber = "+385993427477"; // Zamijeni brojem
-      const message = "I%20am%20interested%20in%20apartment%203!"; // Enkodirana poruka
-      const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-      window.open(url, "_blank");
-    },
-    sendGmail3() {
-      const email = "croatiavacation05@gmail.com"; // Zamijeni pravom e-mail adresom
-      const subject = "Inquiry about Apartment 3";
-      const body = "I am interested in apartment 3! Please send me more information.";
-      const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.open(gmailLink, "_blank");
-    },
-}
+  }
 }
 </script>
 
@@ -556,28 +661,42 @@ export default {
     margin-top: -600px;
     margin-bottom: 50px;
 }
+
+.sirinaVueCards4{
+    width: 500px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
 .sirinaVueCards1-1{
     padding: 15px;
     width: 500px;
-    height: 610px;
+    height: 625px;
     position: relative;
-    bottom: 610px;
+    bottom: 625px;
 }
 .sirinaVueCards1-2{
     padding: 15px;
     width: 500px;
-    height: 610px;
+    height: 625px;
     position: relative;
-    margin-top: -500px;
+    margin-top: -515px;
     bottom: 680px;
 }
 .sirinaVueCards1-3{
     padding: 15px;
     width: 500px;
-    height: 585px;
+    height: 625px;
     position: relative;
-    margin-top: -635px;
+    margin-top: -675px;
     margin-bottom: 30px;
+}
+.sirinaVueCards1-4{
+    padding: 15px;
+    width: 500px;
+    height: 625px;
+    margin-top: -675px;
+    margin-bottom: 60px;
 }
 .none {
     background-image: url(../assets/backgroundimage.jpg);

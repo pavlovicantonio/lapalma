@@ -16,22 +16,36 @@
                                 <v-row align="center">
                                     <v-col cols="6" class="d-flex align-center">
                                         <v-icon>mdi-wifi</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Wifi</span>
                                     </v-col>
                                     <v-col cols="6" class="d-flex align-center justify-end">
                                         <v-icon>mdi-parking</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Parking</span>
+                                    </v-col>
+                                </v-row>
+
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-television</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-dog</v-icon>
                                     </v-col>
                                 </v-row>
 
                                 <v-row align="center">
                                     <v-col cols="6" class="d-flex align-center">
                                         <v-icon>mdi-pool</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Pool</span>
                                     </v-col>
                                     <v-col cols="6" class="d-flex align-center justify-end">
                                         <v-icon>mdi-fridge</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Kitchen</span>
+                                    </v-col>
+                                </v-row>
+
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-grill</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-toilet</v-icon>
                                     </v-col>
                                 </v-row>
                             </v-container>
@@ -51,22 +65,36 @@
                                 <v-row align="center">
                                     <v-col cols="6" class="d-flex align-center">
                                         <v-icon>mdi-wifi</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Wifi</span>
                                     </v-col>
                                     <v-col cols="6" class="d-flex align-center justify-end">
                                         <v-icon>mdi-parking</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Parking</span>
+                                    </v-col>
+                                </v-row>
+
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-television</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-dog</v-icon>
                                     </v-col>
                                 </v-row>
 
                                 <v-row align="center">
                                     <v-col cols="6" class="d-flex align-center">
                                         <v-icon>mdi-pool</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Pool</span>
                                     </v-col>
                                     <v-col cols="6" class="d-flex align-center justify-end">
                                         <v-icon>mdi-fridge</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Kitchen</span>
+                                    </v-col>
+                                </v-row>
+
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-grill</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-toilet</v-icon>
                                     </v-col>
                                 </v-row>
                             </v-container>
@@ -86,28 +114,91 @@
                                 <v-row align="center">
                                     <v-col cols="6" class="d-flex align-center">
                                         <v-icon>mdi-wifi</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Wifi</span>
                                     </v-col>
                                     <v-col cols="6" class="d-flex align-center justify-end">
                                         <v-icon>mdi-parking</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Parking</span>
+                                    </v-col>
+                                </v-row>
+
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-television</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-dog</v-icon>
                                     </v-col>
                                 </v-row>
 
                                 <v-row align="center">
                                     <v-col cols="6" class="d-flex align-center">
                                         <v-icon>mdi-pool</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Pool</span>
                                     </v-col>
                                     <v-col cols="6" class="d-flex align-center justify-end">
                                         <v-icon>mdi-fridge</v-icon>
-                                        <span class="ml-2" style="font-size: 13px;">Kitchen</span>
+                                    </v-col>
+                                </v-row>
+
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-grill</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-toilet</v-icon>
                                     </v-col>
                                 </v-row>
                             </v-container>
                         </div>
                         <center> 
                             <v-btn to="/apartment3" style="margin-top: 20px; margin-bottom: 20px; color:white" color="lime">Apartment 3<v-icon>mdi-information</v-icon></v-btn>
+                        </center>
+                    </v-card>
+
+                    <v-card elevation="11" outlined shaped tile class="AML_vueCard4" >
+                        <v-card-title style="font-size: 15px">Apartment 4</v-card-title>
+                        <center> 
+                            <v-img src="../assets/apartment4p1.jpg" style="width: 85%;" @click="openGallery(4, 'Apartment 4')"></v-img>
+                        </center>
+                        <div class="AML_iconsDiv1" style="margin-left: auto; margin-right: auto; margin-top: 20px; width: 85%;">
+                            <v-container>
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-wifi</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-parking</v-icon>
+                                    </v-col>
+                                </v-row>
+
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-television</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-dog</v-icon>
+                                    </v-col>
+                                </v-row>
+
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-pool</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-fridge</v-icon>
+                                    </v-col>
+                                </v-row>
+
+                                <v-row align="center">
+                                    <v-col cols="6" class="d-flex align-center">
+                                        <v-icon>mdi-grill</v-icon>
+                                    </v-col>
+                                    <v-col cols="6" class="d-flex align-center justify-end">
+                                        <v-icon>mdi-toilet</v-icon>
+                                    </v-col>
+                                </v-row>
+                            </v-container>
+                        </div>
+                        <center> 
+                            <v-btn to="/apartment4" style="margin-top: 20px; margin-bottom: 20px; color:white" color="lime">Apartment 4<v-icon>mdi-information</v-icon></v-btn>
                         </center>
                     </v-card>
             </center>
@@ -152,6 +243,7 @@ export default {
         [ require('@/assets/apartment1p1.jpg'), require('@/assets/apartment1p2.jpg'), require('@/assets/apartment1p3.jpg'), require('@/assets/apartment1p4.jpg'), require('@/assets/apartment1p5.jpg'), require('@/assets/apartment1p6.jpg') ],
         [ require('@/assets/apartment2p1.jpg'), require('@/assets/apartment2p2.jpg'), require('@/assets/apartment2p3.jpg'), require('@/assets/apartment2p4.jpg') ],
         [ require('@/assets/apartment3p1.jpg'), require('@/assets/apartment3p5.jpg'), require('@/assets/apartment3p3.jpg'), require('@/assets/apartment3p4.jpg'), require('@/assets/apartment3p6.jpg'), require('@/assets/apartment3p7.jpg'), require('@/assets/apartment3p8.jpg') ],
+        [ require('@/assets/apartment4p1.jpg'), require('@/assets/apartment4p2.jpg'), require('@/assets/apartment4p3.jpg'), require('@/assets/apartment4p4.jpg'), require('@/assets/apartment4p6.jpeg'),require('@/assets/apartment4p5.jpg')],
         [ require('@/assets/rtkamenjak1.jpg'), require('@/assets/rtkamenjak2.jpg'), require('@/assets/rtkamenjak3.jpg'), require('@/assets/rtkamenjak4.jpeg') ],
         [ require('@/assets/rovinj1.jpg'), require('@/assets/rovinj2.jpg'), require('@/assets/rovinj3.jpg'), require('@/assets/rovinj4.jpeg') ],
         [ require('@/assets/limskikanal1.jpg'), require('@/assets/limskikanal2.jpg'), require('@/assets/limskikanal3.jpg'), require('@/assets/limskikanal4.jpg') ],
@@ -222,6 +314,15 @@ export default {
     z-index: 1;
 }
 .AML_vueCard3{
+    width:70%;
+    height: auto;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: justify;
+    z-index: 1;
+}
+.AML_vueCard4{
     width:70%;
     height: auto;
     display: inline-block;

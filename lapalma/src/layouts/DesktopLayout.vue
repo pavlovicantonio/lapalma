@@ -6,7 +6,7 @@
         <!-- 1️⃣ PRVA GALERIJA -->
         <v-card elevation="11" outlined shaped tile class="sirinaVueCard1">
             <v-card-title>La Palma Apartments 🌴</v-card-title>
-            <v-card-subtitle>Discover Our Exclusive Offer – Three Unique Apartments Just for You!</v-card-subtitle>
+            <v-card-subtitle>Discover Our Exclusive Offer – Four Unique Apartments Just for You!</v-card-subtitle>
             <v-card-text :class="{ 'text-truncated1': !expanded1 }" :style="{ maxHeight: expanded1 ? 'none' : '250px', overflow: expanded1 ? 'visible' : 'hidden' }">
                 Escape to a place where comfort meets paradise. La Palma Apartments offer the perfect retreat 
                 for those seeking relaxation, adventure, and unforgettable memories.
@@ -15,8 +15,8 @@
                 Whether you're looking for a romantic getaway, a fun-filled family vacation, or a peaceful escape, 
                 your perfect stay starts here. Book your stay today and experience the magic of the Mediterranean! 🌿☀️🌊
                 <br><br>
-                At La Palma Apartments, we offer a selection of three beautifully designed apartments, 
-                each providing a perfect blend of comfort and style. Located just 250 meters from the 
+                At La Palma Apartments, we offer a selection of four beautifully designed apartments, 
+                each providing a perfect blend of comfort and style. Located just 200 meters from the 
                 sea, you can enjoy easy access to the beach while relaxing in the peaceful ambiance of 
                 our property. Unwind by the pool and experience the tranquility that makes your stay truly 
                 special. Whether you're seeking a romantic escape, a fun family holiday, or a productive 
@@ -36,7 +36,7 @@
             <v-card-subtitle>Our apartments are located in "Pješčana uvala" ( Pula, Istria, Croatia )</v-card-subtitle>
             <v-card-text :class="{ 'text-truncated2': !expanded2 }" :style="{ maxHeight: expanded2 ? 'none' : '250px', overflow: expanded2 ? 'visible' : 'hidden' }">
                 ... one of the most popular destinations near Pula, offering a 
-                perfect combination of natural beauty and modern amenities. Just 250 meters from the sea, our location 
+                perfect combination of natural beauty and modern amenities. Just 200 meters from the sea, our location 
                 provides easy access to stunning beaches, vibrant local attractions, and a peaceful atmosphere for a truly relaxing stay.
                 <br><br>
                 "Pješčana uvala" offers a variety of attractions and amenities to enhance your stay. Here, you will find beautiful beaches, 
@@ -148,6 +148,55 @@
                 </v-card-actions>
             </v-card>
         </v-dialog>
+
+        <v-footer color="#F2EFE7" padless class="pa-6">
+    <v-container>
+      <v-row align="center" justify="space-between">
+        <!-- Lijevo: Logo + kontakt -->
+        <v-col cols="12" md="4" class="text-left">
+          <div class="d-flex align-center mb-2">
+            <h3 class="mb-0" style="color:#1976d2;">La Palma Apartments</h3>
+            <v-img
+              src="@/assets/palm.png"
+              alt="La Palma Logo"
+              max-width="25"
+              class="mr-2"
+              style="margin-left: 5px;"
+            ></v-img>
+          </div>
+          <div style="color: #333;">
+            +393279431662 <br>  
+            croatiavacation05@gmail.com <br>
+            Pula, Croatia<br />
+          </div>
+        </v-col>
+
+        <!-- Sredina: copyright -->
+        <v-col cols="12" md="4" class="text-center mt-4 mt-md-0">
+          <div style="color:#333;">
+            © {{ new Date().getFullYear() }} La Palma Apartments<br />
+            Website created by <strong style="color: #1976d2;"><a href="https://pavlovicantonio.netlify.app" target="_blank">Antonio Pavlović</a></strong>
+          </div>
+        </v-col>
+
+        <!-- Desno: društvene mreže -->
+        <v-col cols="12" md="4" class="text-right mt-4 mt-md-0">
+          <v-btn icon href="https://facebook.com" target="_blank">
+            <v-icon color="#1976d2">mdi-facebook</v-icon>
+          </v-btn>
+          <v-btn icon href="https://instagram.com" target="_blank">
+            <v-icon color="#1976d2">mdi-instagram</v-icon>
+          </v-btn>
+          <v-btn icon href="https://facebook.com" target="_blank">
+            <v-icon color="#1976d2">mdi-whatsapp</v-icon>
+          </v-btn>
+          <v-btn icon href="https://facebook.com" target="_blank">
+            <v-icon color="#1976d2">mdi-gmail</v-icon>
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-footer>
         <div></div>
         </center>
     </div>

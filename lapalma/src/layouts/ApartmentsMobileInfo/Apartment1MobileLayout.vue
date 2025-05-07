@@ -8,14 +8,12 @@
                     <v-card elevation="11" outlined shaped tile class="AML_vueCard1" >
                         <v-container style="text-align: left;">
                         <v-card-title style="font-size: 15px; position: relative; right: 12px;">Apartment 1</v-card-title>
-                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Size:</b> 50m², 2 Bedrooms, 1 Bathroom</v-card-text>
-                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Capacity:</b> Up to 4 guests</v-card-text>
-                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
+                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Outdoor:</b> Balcony, Terrace, Garden, BBQ</v-card-text>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>View:</b> Sea view, Garden view, City view</v-card-text>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Parking:</b> Private parking, Free street parking</v-card-text>
-                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Pet Policy:</b> Pets allowed/not allowed</v-card-text>
-                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 50m</v-card-text>
+                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Pet Policy:</b> Pets allowed</v-card-text>
+                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 100m</v-card-text>
                     </v-container>
                         <v-card-text>For more information, feel free to contact us via:</v-card-text>
                        <center>

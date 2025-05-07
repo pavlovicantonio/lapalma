@@ -28,7 +28,79 @@
             <v-btn type="submit" color="light-blue" class="send-btn" elevation="2">Send</v-btn>
           </v-form>
         </v-card>
+
+        <v-sheet class="pa-4" elevation="2" style="margin-bottom: 50px;">
+        <v-container>
+          <v-row align="center" justify="space-between">
+            <!-- Lijevo: Logo + kontakt -->
+            <v-col cols="12" md="4" class="text-left">
+              <div class="d-flex align-center mb-2">
+                <h3 class="mb-0" style="color:#1976d2;">La Palma Apartments</h3>
+                <v-img
+                  src="@/assets/palm.png"
+                  alt="La Palma Logo"
+                  max-width="25"
+                  class="mr-2"
+                  style="margin-left: 5px;"
+                ></v-img>
+              </div>
+              <div style="color: #333;">
+                +393279431662 <br>  
+                croatiavacation05@gmail.com <br>
+                Pula, Croatia<br />
+              </div>
+            </v-col>
+          <v-row>
+
+                    <v-col cols="12" md="4" class="text-left mt-4 mt-md-0">
+                    <v-btn
+                        class="mt-4"
+                        color="primary"
+                        dark
+                        href="/lapalmapdf.pdf"
+                        target="_blank"
+                        download
+                      >
+                      La Palma Poster (PDF)
+                      <v-icon right>mdi-file-download</v-icon>
+                      </v-btn>
+                    </v-col>
+            </v-row>
+
+            <br>
+            <!-- Sredina: copyright -->
+            <v-col cols="12" md="4" class="text-center mt-4 mt-md-0">
+              <div style="color:#333;">
+                © {{ new Date().getFullYear() }} La Palma Apartments<br />
+                Website created by <strong style="color: #1976d2;"><a href="https://pavlovicantonio.netlify.app" target="_blank">Antonio Pavlović</a></strong>
+              </div>
+            </v-col>
+          </v-row>
+          
+          <v-row>
+            <v-col cols="12" md="4" class="text-center mt-4 mt-md-0">
+            <v-btn icon href="https://facebook.com" target="_blank">
+              <v-icon color="#1976d2">mdi-facebook</v-icon>
+            </v-btn>
+            <v-btn icon href="https://instagram.com" target="_blank">
+              <v-icon color="#1976d2">mdi-instagram</v-icon>
+            </v-btn>
+            <v-btn icon href="https://facebook.com" target="_blank">
+              <v-icon color="#1976d2">mdi-whatsapp</v-icon>
+            </v-btn>
+            <v-btn icon href="https://facebook.com" target="_blank">
+              <v-icon color="#1976d2">mdi-gmail</v-icon>
+            </v-btn>
+          </v-col>
+        </v-row>
+
+        
+        </v-container>
+      </v-sheet>
+
       </div>
+
+      
     </div>
   </template>
   

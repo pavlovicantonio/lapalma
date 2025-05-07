@@ -3,8 +3,8 @@
     <component :is="layoutComponent" />
 
     <!-- Navigacija za desktop -->
-    <v-app-bar app color="primary" dark v-if="!isMobile">
-      <v-toolbar-title>La Palma Apartments 🌴</v-toolbar-title>
+    <v-app-bar app color="primary" dark v-if="!isMobile" style="z-index: 1000;">
+      <v-toolbar-title style="font-family: 'Pacifico', cursive;">La Palma Apartments 🌴</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn text to="/">Home</v-btn>
       <v-btn text to="/apartments">Apartments</v-btn>
@@ -38,6 +38,7 @@ import Apartment1DesktopLayout from "@/layouts/ApartmentsDesktopLayouts/Apartmen
 import Apartment1MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment1MobileLayout.vue";
 import Apartment2MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment2MobileLayout.vue";
 import Apartment3MobileLayout from "@/layouts/ApartmentsMobileInfo/Apartment3MobileLayout.vue";
+import Apartment4MobileLayout from "./layouts/ApartmentsMobileInfo/Apartment4MobileLayout.vue";
 import InfoDesktopLayout from "./layouts/InfoDesktopLayout.vue";
 import InfoMobileLayout from "./layouts/InfoMobileLayout.vue";
 
@@ -52,6 +53,7 @@ export default {
     Apartment1MobileLayout,
     Apartment2MobileLayout,
     Apartment3MobileLayout,
+    Apartment4MobileLayout,
     InfoDesktopLayout,
     InfoMobileLayout
   },
@@ -67,6 +69,7 @@ export default {
         "/apartment1": this.isMobile ? Apartment1MobileLayout : Apartment1DesktopLayout,
         "/apartment2": this.isMobile ? Apartment2MobileLayout : Apartment1DesktopLayout,
         "/apartment3": this.isMobile ? Apartment3MobileLayout : Apartment1DesktopLayout,
+        "/apartment4": this.isMobile ? Apartment4MobileLayout : Apartment1DesktopLayout,
         "/info": this.isMobile ? InfoMobileLayout : InfoDesktopLayout,
       };
 
@@ -93,4 +96,4 @@ export default {
 </script>
 
 <style>
-* { font-family: 'Inter', sans-serif !important; }</style>
+* { font-family: 'Inter', sans-serif }</style>

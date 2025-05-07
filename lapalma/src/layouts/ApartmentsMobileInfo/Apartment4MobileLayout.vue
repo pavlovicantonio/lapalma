@@ -5,13 +5,13 @@
         </div>
         <div class="AML_secondDiv">
             <center>
-                    <v-card elevation="11" outlined shaped tile class="AML_vueCard2" >
+                    <v-card elevation="11" outlined shaped tile class="AML_vueCard3" >
                         <v-container style="text-align: left;">
-                        <v-card-title style="font-size: 15px; position: relative; right: 12px;">Apartment 2</v-card-title>
+                        <v-card-title style="font-size: 15px; position: relative; right: 12px;">Apartment 4</v-card-title>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
-                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Outdoor:</b> Terrace, Garden, BBQ</v-card-text>
-                        <v-card-text style="font-size: 13px;" class="pa-1"><b>View:</b>  Church view, Garden view, City view</v-card-text>
+                        <v-card-text style="font-size: 13px;" class="pa-1"><b>Outdoor:</b> Balcony, Terrace, Garden, BBQ</v-card-text>
+                        <v-card-text style="font-size: 13px;" class="pa-1"><b>View:</b> Sea view, Garden view, City view</v-card-text>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Parking:</b> Private parking, Free street parking</v-card-text>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Pet Policy:</b> Pets allowed</v-card-text>
                         <v-card-text style="font-size: 13px;" class="pa-1"><b>Nearby:</b> Beach 200m, Supermarket 100m, Restaurant 100m</v-card-text>
@@ -49,7 +49,7 @@
     height: auto;
     z-index: 0;
 }
-.AML_vueCard2{
+.AML_vueCard3{
     width:70%;
     height: auto;
     display: inline-block;
@@ -71,20 +71,20 @@ export default{
     methods:{
         sendEmail() {
         const email = "croatiavacation05@gmail.com";
-        const subject = "Inquiry about Apartment 2";
-        const body = "I am interested in apartment 2! Please send me more information.";
+        const subject = "Inquiry about Apartment 4";
+        const body = "I am interested in apartment 4! Please send me more information.";
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
         },
         openWhatsApp() {
         const phoneNumber = "+385993427477";
-        const message = "I am interested in apartment 2!";
+        const message = "I am interested in apartment 4!";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
         },
         sendSMS() {
         const phoneNumber = "+385993427477";
-        const message = "I am interested in apartment 2!";
+        const message = "I am interested in apartment 4!";
         window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
         },
         goToApartments() {

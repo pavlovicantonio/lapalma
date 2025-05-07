@@ -34,6 +34,11 @@ const routes = [
     component: Apartment1DesktopLayout
   },
   {
+    path: '/apartment4',
+    name: 'apartment4',
+    component: Apartment1DesktopLayout
+  },
+  {
     path: '/info',
     name: 'info',
     component: InfoDesktopLayout
