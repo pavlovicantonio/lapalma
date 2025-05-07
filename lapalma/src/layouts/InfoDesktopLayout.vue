@@ -25,7 +25,7 @@
               target="_blank"
               download
             >
-            Download La Palma Poster (PDF)
+            Download La Palma Flyer (PDF)
             <v-icon right>mdi-file-download</v-icon>
             </v-btn>
           </v-card>

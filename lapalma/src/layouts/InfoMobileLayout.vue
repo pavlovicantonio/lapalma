@@ -1,12 +1,12 @@
 <template>
     <div>
       <div class="AML_firstDiv">
-        <v-toolbar-title>La Palma Apartments 🌴</v-toolbar-title>
+        <v-toolbar-title style="font-family: 'Pacifico', cursive;">La Palma Apartments 🌴</v-toolbar-title>
       </div>
   
       <div class="AML_secondDiv">
         <v-card elevation="11" outlined shaped class="sirinaVueCardss1" color="white" style="margin-bottom: 50px;">
-          <v-card-title>FREQUENTLY ASKED <br> QUESTIONS</v-card-title>
+          <v-card-title style="font-size: 1.5rem; font-weight: 600; color: #1976d2; margin-bottom: 24px; line-height: 1.4; text-align: left;">FAQ's</v-card-title>
   
           <div class="questions" style="margin-bottom: 50px;">
             <v-expansion-panels>
@@ -16,8 +16,10 @@
               </v-expansion-panel>
             </v-expansion-panels>
           </div>
-  
-          <h1 style="text-align: justify;">Feel free to send an inquiry if you have any questions</h1>
+        </v-card>
+
+        <v-sheet class="pa-4" elevation="2">
+          <h1 style="font-size: 1.5rem; font-weight: 600; color: #1976d2; margin-bottom: 24px; line-height: 1.4; text-align: left;">Ask us anything!</h1>
   
           <v-form @submit.prevent="submitForm" ref="form" v-model="valid" class="contact-form">
             <v-text-field v-model="form.fullName" label="First and last name" :rules="[rules.required]" required />
@@ -27,8 +29,8 @@
             <v-textarea v-model="form.question" label="What are you interested in?" :rules="[rules.required]" required />
             <v-btn type="submit" color="light-blue" class="send-btn" elevation="2">Send</v-btn>
           </v-form>
-        </v-card>
-
+        </v-sheet>
+        <br>
         <v-sheet class="pa-4" elevation="2" style="margin-bottom: 50px;">
         <v-container>
           <v-row align="center" justify="space-between">
@@ -61,7 +63,7 @@
                         target="_blank"
                         download
                       >
-                      La Palma Poster (PDF)
+                      La Palma Flyer (PDF)
                       <v-icon right>mdi-file-download</v-icon>
                       </v-btn>
                     </v-col>
@@ -123,7 +125,7 @@
           email: value => /.+@.+\..+/.test(value) || 'Please enter a valid email address!'
         },
         faqList: [
-          { question: "How to book an apartment?", answer: "You can book the apartment via Booking, or contact us through the form." },
+          { question: "How to book an apartment?", answer: "You can book the apartment via apartment section, or contact us through the form down." },
           { question: "Is Wi-Fi available?", answer: "Yes, all apartments have free high-speed Wi-Fi." },
           { question: "Is the beach nearby?", answer: "Yes, the beach is just a 3-minute walk away." },
           { question: "Is free parking available?", answer: "Yes, each apartment comes with one free parking spot." },

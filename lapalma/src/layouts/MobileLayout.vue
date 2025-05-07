@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="firstDiv">
-            <v-toolbar-title>La Palma Apartments 🌴</v-toolbar-title>
+            <v-toolbar-title style="font-family: 'Pacifico', cursive;">La Palma Apartments 🌴</v-toolbar-title>
         </div>
         <div class="secondDiv">
             <center>
