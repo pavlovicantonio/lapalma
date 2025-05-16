@@ -178,9 +178,9 @@ export default {
       galleryTitle: "",
       selectedImages: [],
 
-      // 📷 Svaka kartica ima svoju galeriju
+      // 📷 Svaka kartica ima svoju galeriju  
       galleries: [
-      [ require('@/assets/apartmentspic1.jpg'), require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic9.jpg'), require('@/assets/lapalmaapartments1.jpg'), require('@/assets/lapalmaapartments2.jpg'),  require('@/assets/lapalmaapartments3.jpg'), require('@/assets/lapalmaapartments4.jpg'),  require('@/assets/lapalmaapartments5.jpg')],
+        [ require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic10.jpg'), require('@/assets/apartmentspic1.jpg'), require('@/assets/lapalmaapartments1.jpg'), require('@/assets/apartmentspic11.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic12.jpg'),  require('@/assets/lapalmaapartments3.jpg'), require('@/assets/lapalmaapartments5.jpg'), require('@/assets/apartmentspic9.jpg')],
         [ require('@/assets/location1.jpg'), require('@/assets/location2.jpg'), require('@/assets/location3.jpg'), require('@/assets/location4.jpg'), require('@/assets/location5.jpg'), require('@/assets/location6.jpg'), require('@/assets/location7.jpg'), require('@/assets/location8.jpg'), require('@/assets/location9.jpg'), require('@/assets/location10.jpg'), require('@/assets/location11.jpg'), require('@/assets/location12.jpg'), require('@/assets/location13.jpg'), require('@/assets/location14.jpg'), require('@/assets/location15.jpg')],
         [ require('@/assets/beachbar1.jpg'), require('@/assets/beachbar2.jpg'), require('@/assets/restaurant1.jpg'), require('@/assets/restaurant2.jpg'), require('@/assets/restaurant3.jpg') ],
         [ require('@/assets/npbrijuni.jpg'), require('@/assets/brijuni1.jpg'), require('@/assets/brijuni2.jpg'), require('@/assets/brijuni3.jpeg'), require('@/assets/brijuni4.jpg'), require('@/assets/npbrijuni2.jpg'), require('@/assets/npbrijuni3.jpg'), require('@/assets/npbrijuni4.jpg'), require('@/assets/npbrijuni5.jpg'), require('@/assets/npbrijuni6.jpg'), require('@/assets/npbrijuni7.jpg'), require('@/assets/npbrijuni8.jpg'), require('@/assets/npbrijuni9.jpg'), require('@/assets/npbrijuni10.jpg') ],

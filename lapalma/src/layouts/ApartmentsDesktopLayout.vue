@@ -501,13 +501,13 @@
         <v-col cols="12" md="4" class="text-center mt-4 mt-md-0">
           <div style="color:#333;">
             © {{ new Date().getFullYear() }} La Palma Apartments<br />
-            Website created by <strong style="color: #1976d2;"><a href="https://pavlovicantonio.netlify.app" target="_blank">Antonio Pavlović</a></strong>
+            Website created by <strong style="color: #1976d2;"><a href="https://apwebing.netlify.app" target="_blank">APWebing</a></strong>
           </div>
         </v-col>
 
         <!-- Desno: društvene mreže -->
         <v-col cols="12" md="4" class="text-right mt-4 mt-md-0">
-          <v-btn icon href="https://facebook.com" target="_blank">
+          <v-btn icon href="https://www.facebook.com/profile.php?id=61575127426928" target="_blank">
             <v-icon color="#1976d2">mdi-facebook</v-icon>
           </v-btn>
           <v-btn icon href="https://www.instagram.com/croatiadreamholidayy/" target="_blank">
@@ -516,7 +516,7 @@
           <v-btn icon @click="openWhatsApp2()" target="_blank">
             <v-icon color="#1976d2">mdi-whatsapp</v-icon>
           </v-btn>
-          <v-btn icon href="https://facebook.com" target="_blank">
+          <v-btn icon @click="sendGmail1()" target="_blank">
             <v-icon color="#1976d2">mdi-gmail</v-icon>
           </v-btn>
         </v-col>
@@ -548,7 +548,7 @@ export default {
 
       // 📷 Svaka kartica ima svoju galeriju
       galleries: [
-        [ require('@/assets/apartmentspic1.jpg'), require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic9.jpg')],
+        [ require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic10.jpg'), require('@/assets/apartmentspic1.jpg'), require('@/assets/lapalmaapartments1.jpg'), require('@/assets/apartmentspic11.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic12.jpg'),  require('@/assets/lapalmaapartments3.jpg'), require('@/assets/lapalmaapartments5.jpg'), require('@/assets/apartmentspic9.jpg')],
         [ require('@/assets/apartment1p1.jpg'), require('@/assets/apartment1p2.jpg'), require('@/assets/apartment1p3.jpg'), require('@/assets/apartment1p4.jpg'), require('@/assets/apartment1p5.jpg'), require('@/assets/apartment1p6.jpg') ],
         [ require('@/assets/apartment2p1.jpg'), require('@/assets/apartment2p2.jpg'), require('@/assets/apartment2p3.jpg'), require('@/assets/apartment2p4.jpg') ],
         [ require('@/assets/apartment3p1.jpg'), require('@/assets/apartment3p5.jpg'), require('@/assets/apartment3p3.jpg'), require('@/assets/apartment3p4.jpg'), require('@/assets/apartment3p6.jpg'), require('@/assets/apartment3p7.jpg'), require('@/assets/apartment3p8.jpg') ],
@@ -628,6 +628,13 @@ export default {
       const email = "croatiavacation05@gmail.com";
       const subject = `Inquiry about Apartment ${apartmentNumber}`;
       const body = `I am interested in apartment ${apartmentNumber}! Please send me more information.`;
+      const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(gmailLink, "_blank");
+    },
+    sendGmail1() {
+      const email = "croatiavacation05@gmail.com";
+      const subject = `Inquiry about Apartments!`;
+      const body = `I am interested in your apartments! Please send me more information.`;
       const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.open(gmailLink, "_blank");
     },

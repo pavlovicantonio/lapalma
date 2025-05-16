@@ -76,22 +76,22 @@
         <v-col cols="12" md="4" class="text-center mt-4 mt-md-0">
           <div style="color:#333;">
             © {{ new Date().getFullYear() }} La Palma Apartments<br />
-            Website created by <strong style="color: #1976d2;"><a href="https://pavlovicantonio.netlify.app" target="_blank">Antonio Pavlović</a></strong>
+            Website created by <strong style="color: #1976d2;"><a href="https://apwebing.netlify.app" target="_blank">APWebing</a></strong>
           </div>
         </v-col>
 
         <!-- Desno: društvene mreže -->
         <v-col cols="12" md="4" class="text-right mt-4 mt-md-0">
-          <v-btn icon href="https://facebook.com" target="_blank">
+          <v-btn icon href="https://www.facebook.com/profile.php?id=61575127426928" target="_blank">
             <v-icon color="#1976d2">mdi-facebook</v-icon>
           </v-btn>
-          <v-btn icon href="https://instagram.com" target="_blank">
+          <v-btn icon href="https://www.instagram.com/croatiadreamholidayy/" target="_blank">
             <v-icon color="#1976d2">mdi-instagram</v-icon>
           </v-btn>
-          <v-btn icon href="https://facebook.com" target="_blank">
+          <v-btn icon @click="openWhatsapp2()" target="_blank">
             <v-icon color="#1976d2">mdi-whatsapp</v-icon>
           </v-btn>
-          <v-btn icon href="https://facebook.com" target="_blank">
+          <v-btn icon @click="sendGmail1()" target="_blank">
             <v-icon color="#1976d2">mdi-gmail</v-icon>
           </v-btn>
         </v-col>
@@ -175,6 +175,19 @@ export default {
     this.form.email = '';
     this.form.phone = '';
     this.form.question = '';
+  },
+  openWhatsapp2(){
+    const phoneNumber = "393279431662";
+    const message = `I%20am%20interested%20in%20your%20apartments!`;
+    const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+    window.open(url, "_blank");
+  },
+  sendGmail1(){
+      const email = "croatiavacation05@gmail.com";
+      const subject = `Inquiry about Apartments!`;
+      const body = `I am interested in your apartments! Please send me more information.`;
+      const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(gmailLink, "_blank");
   }
 }
 };

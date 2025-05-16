@@ -175,22 +175,22 @@
         <v-col cols="12" md="4" class="text-center mt-4 mt-md-0">
           <div style="color:#333;">
             © {{ new Date().getFullYear() }} La Palma Apartments<br />
-            Website created by <strong style="color: #1976d2;"><a href="https://pavlovicantonio.netlify.app" target="_blank">Antonio Pavlović</a></strong>
+            Website created by <strong style="color: #1976d2;"><a href="https://apwebing.netlify.app" target="_blank">APWebing</a></strong>
           </div>
         </v-col>
 
         <!-- Desno: društvene mreže -->
         <v-col cols="12" md="4" class="text-right mt-4 mt-md-0">
-          <v-btn icon href="https://facebook.com" target="_blank">
+          <v-btn icon href="https://www.facebook.com/profile.php?id=61575127426928" target="_blank">
             <v-icon color="#1976d2">mdi-facebook</v-icon>
           </v-btn>
-          <v-btn icon href="https://instagram.com" target="_blank">
+          <v-btn icon href="https://www.instagram.com/croatiadreamholidayy/" target="_blank">
             <v-icon color="#1976d2">mdi-instagram</v-icon>
           </v-btn>
-          <v-btn icon href="https://facebook.com" target="_blank">
+          <v-btn icon @click="openWhatsapp2()" target="_blank">
             <v-icon color="#1976d2">mdi-whatsapp</v-icon>
           </v-btn>
-          <v-btn icon href="https://facebook.com" target="_blank">
+          <v-btn icon @click="sendGmail1()" target="_blank">
             <v-icon color="#1976d2">mdi-gmail</v-icon>
           </v-btn>
         </v-col>
@@ -216,7 +216,7 @@ export default {
 
       // 📷 Svaka kartica ima svoju galeriju
       galleries: [
-        [ require('@/assets/apartmentspic1.jpg'), require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic9.jpg'), require('@/assets/lapalmaapartments1.jpg'), require('@/assets/lapalmaapartments2.jpg'),  require('@/assets/lapalmaapartments3.jpg'), require('@/assets/lapalmaapartments4.jpg'),  require('@/assets/lapalmaapartments5.jpg')],
+        [ require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic10.jpg'), require('@/assets/apartmentspic1.jpg'), require('@/assets/lapalmaapartments1.jpg'), require('@/assets/apartmentspic11.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic12.jpg'),  require('@/assets/lapalmaapartments3.jpg'), require('@/assets/lapalmaapartments5.jpg'), require('@/assets/apartmentspic9.jpg')],
         [ require('@/assets/location1.jpg'), require('@/assets/location2.jpg'), require('@/assets/location3.jpg'), require('@/assets/location4.jpg'), require('@/assets/location5.jpg'), require('@/assets/location6.jpg'), require('@/assets/location7.jpg'), require('@/assets/location8.jpg'), require('@/assets/location9.jpg'), require('@/assets/location10.jpg'), require('@/assets/location11.jpg'), require('@/assets/location12.jpg'), require('@/assets/location13.jpg'), require('@/assets/location14.jpg'), require('@/assets/location15.jpg')],
         [ require('@/assets/beachbar1.jpg'), require('@/assets/beachbar2.jpg'), require('@/assets/restaurant1.jpg'), require('@/assets/restaurant2.jpg'), require('@/assets/restaurant3.jpg') ],
         [ require('@/assets/npbrijuni.jpg'), require('@/assets/brijuni1.jpg'), require('@/assets/brijuni2.jpg'), require('@/assets/brijuni3.jpeg'), require('@/assets/brijuni4.jpg'), require('@/assets/npbrijuni2.jpg'), require('@/assets/npbrijuni3.jpg'), require('@/assets/npbrijuni4.jpg'), require('@/assets/npbrijuni5.jpg'), require('@/assets/npbrijuni6.jpg'), require('@/assets/npbrijuni7.jpg'), require('@/assets/npbrijuni8.jpg'), require('@/assets/npbrijuni9.jpg'), require('@/assets/npbrijuni10.jpg') ],
@@ -236,7 +236,20 @@ export default {
       this.selectedImages = this.galleries[index];
       this.galleryTitle = title;
       this.showGallery = true;
-    }
+    },
+    openWhatsapp2(){
+      const phoneNumber = "393279431662";
+      const message = `I%20am%20interested%20in%20your%20apartments!`;
+      const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+      window.open(url, "_blank");
+    },
+    sendGmail1() {
+      const email = "croatiavacation05@gmail.com";
+      const subject = `Inquiry about Apartments!`;
+      const body = `I am interested in your apartments! Please send me more information.`;
+      const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(gmailLink, "_blank");
+    },
   }
 };
 </script>
