@@ -177,7 +177,7 @@ export default {
     this.form.question = '';
   },
   openWhatsapp2(){
-    const phoneNumber = "393279431662";
+    const phoneNumber = "+393279431662";
     const message = `I%20am%20interested%20in%20your%20apartments!`;
     const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
     window.open(url, "_blank");

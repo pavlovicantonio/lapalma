@@ -216,7 +216,7 @@ export default {
 
       // 📷 Svaka kartica ima svoju galeriju
       galleries: [
-        [ require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic10.jpg'), require('@/assets/apartmentspic1.jpg'), require('@/assets/lapalmaapartments1.jpg'), require('@/assets/apartmentspic11.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic12.jpg'),  require('@/assets/lapalmaapartments3.jpg'), require('@/assets/lapalmaapartments5.jpg'), require('@/assets/apartmentspic9.jpg')],
+        [ require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic10.jpg'), require('@/assets/apartmentspic1.jpg'), require('@/assets/4pic.jpg'), require('@/assets/apartmentspic11.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic12.jpg'),  require('@/assets/lapalmaapartments3.jpg'), require('@/assets/lapalmaapartments5.jpg'), require('@/assets/apartmentspic9.jpg')],
         [ require('@/assets/location1.jpg'), require('@/assets/location2.jpg'), require('@/assets/location3.jpg'), require('@/assets/location4.jpg'), require('@/assets/location5.jpg'), require('@/assets/location6.jpg'), require('@/assets/location7.jpg'), require('@/assets/location8.jpg'), require('@/assets/location9.jpg'), require('@/assets/location10.jpg'), require('@/assets/location11.jpg'), require('@/assets/location12.jpg'), require('@/assets/location13.jpg'), require('@/assets/location14.jpg'), require('@/assets/location15.jpg')],
         [ require('@/assets/beachbar1.jpg'), require('@/assets/beachbar2.jpg'), require('@/assets/restaurant1.jpg'), require('@/assets/restaurant2.jpg'), require('@/assets/restaurant3.jpg') ],
         [ require('@/assets/npbrijuni.jpg'), require('@/assets/brijuni/brijuni2.jpg'), require('@/assets/brijuni/brijuninew.jpg'), require('@/assets/brijuni/brijuni1.jpg'), require('@/assets/brijuni/npbrijuni2.jpg'), require('@/assets/brijuni/npbrijuni3.jpg'), require('@/assets/brijuni/npbrijuni4.jpg'), require('@/assets/brijuni/npbrijuni5.jpg'), require('@/assets/brijuni/npbrijuni6.jpg'), require('@/assets/brijuni/npbrijuni7.jpg'), require('@/assets/brijuni/npbrijuni8.jpg'), require('@/assets/brijuni/brijuni1.jpg'), require('@/assets/brijuni/npbrijuni9.jpg'), require('@/assets/brijuni/npbrijuni10.jpg'), require('@/assets/brijuni/brijuni3.jpeg'), require('@/assets/brijuni/brijuni4.jpg')],
@@ -238,7 +238,7 @@ export default {
       this.showGallery = true;
     },
     openWhatsapp2(){
-      const phoneNumber = "393279431662";
+      const phoneNumber = "+393279431662";
       const message = `I%20am%20interested%20in%20your%20apartments!`;
       const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
       window.open(url, "_blank");

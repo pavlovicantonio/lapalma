@@ -611,7 +611,7 @@ export default {
       }
     },
     openWhatsApp(apartmentNumber) {
-      const phoneNumber = "393279431662"; // bez + znaka
+      const phoneNumber = "+393279431662"; // bez + znaka
       const message = `I am interested in apartment ${apartmentNumber}!`;
       const encodedMessage = encodeURIComponent(message);
       const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
@@ -619,7 +619,7 @@ export default {
     },
 
     openWhatsApp2() {
-      const phoneNumber = "393279431662";
+      const phoneNumber = "+393279431662";
       const message = `I%20am%20interested%20in%20your%20apartments!`;
       const url = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
       window.open(url, "_blank");

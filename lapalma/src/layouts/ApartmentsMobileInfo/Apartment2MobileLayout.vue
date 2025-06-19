@@ -77,13 +77,13 @@ export default{
         window.location.href = mailtoLink;
         },
         openWhatsApp() {
-        const phoneNumber = "+385993427477";
+        const phoneNumber = "+393279431662";
         const message = "I am interested in apartment 2!";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
         },
         sendSMS() {
-        const phoneNumber = "+385993427477";
+        const phoneNumber = "+393279431662";
         const message = "I am interested in apartment 2!";
         window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
         },
