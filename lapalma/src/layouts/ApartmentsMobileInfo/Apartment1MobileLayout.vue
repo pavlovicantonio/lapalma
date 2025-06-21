@@ -70,20 +70,20 @@ export default{
     methods:{
         sendEmail() {
         const email = "croatiavacation05@gmail.com";
-        const subject = "Inquiry about Apartment 1";
-        const body = "I am interested in apartment 1! Please send me more information.";
+        const subject = "Inquiry about Istria Bay Apartment";
+        const body = "I am interested in the Istria Bay Apartment! Please send me more information.";
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
         },
         openWhatsApp() {
         const phoneNumber = "+393279431662";
-        const message = "I am interested in apartment 1!";
+        const message = "I am interested in the Istria Bay Apartment.";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
         },
         sendSMS() {
         const phoneNumber = "+393279431662";
-        const message = "I am interested in apartment 1!";
+        const message = "I am interested in the Istria Bay Apartment.";
         window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
         },
         goToApartments() {

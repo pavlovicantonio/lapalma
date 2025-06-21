@@ -71,8 +71,8 @@ export default{
     methods:{
         sendEmail() {
         const email = "croatiavacation05@gmail.com";
-        const subject = "Inquiry about Apartment 4";
-        const body = "I am interested in apartment 4! Please send me more information.";
+        const subject = "Inquiry about Blue Horizon Apartment";
+        const body = "I am interested in the Blue Horizon Apartment! Please send me more information.";
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
         },
@@ -84,7 +84,7 @@ export default{
         },
         sendSMS() {
         const phoneNumber = "+393279431662";
-        const message = "I am interested in apartment 4!";
+        const message = "I am interested in the Blue Horizon Apartment!";
         window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
         },
         goToApartments() {

@@ -7,9 +7,9 @@
         <div class="AML_secondDiv">
             <center>
                     <v-card elevation="11" outlined shaped tile class="AML_vueCard1" >
-                        <v-card-title style="font-size: 15px">Apartment 1</v-card-title>
+                        <v-card-title style="font-size: 15px">Istria Bay</v-card-title>
                         <center> 
-                            <v-img src="../assets/apartment1p1.jpg" style="width: 85%;" @click="openGallery(1, 'Apartment 1')"></v-img>
+                            <v-img src="../assets/apartment1p1.jpg" style="width: 85%;" @click="openGallery(1, 'Istria Bay')"></v-img>
                         </center>
                         <div class="AML_iconsDiv1" style="margin-left: auto; margin-right: auto; margin-top: 20px; width: 85%;">
                             <v-container>
@@ -51,14 +51,14 @@
                             </v-container>
                         </div>
                         <center> 
-                            <v-btn to="/apartment1" style="margin-top: 20px; margin-bottom: 20px; color: white;" color="lime">Apartment 1<v-icon>mdi-information</v-icon></v-btn>
+                            <v-btn to="/apartment1" style="margin-top: 20px; margin-bottom: 20px; color: white;" color="lime">Istria Bay<v-icon>mdi-information</v-icon></v-btn>
                         </center>
                     </v-card>
 
                     <v-card elevation="11" outlined shaped tile class="AML_vueCard2" >
-                        <v-card-title style="font-size: 15px">Apartment 2</v-card-title>
+                        <v-card-title style="font-size: 15px">Sunset Drift</v-card-title>
                         <center> 
-                            <v-img src="../assets/apartment2p1.jpg" style="width: 85%;" @click="openGallery(2, 'Apartment 2')"></v-img>
+                            <v-img src="../assets/apartment2p1.jpg" style="width: 85%;" @click="openGallery(2, 'Sunset Drift')"></v-img>
                         </center>
                         <div class="AML_iconsDiv1" style="margin-left: auto; margin-right: auto; margin-top: 20px; width: 85%;">
                             <v-container>
@@ -100,14 +100,14 @@
                             </v-container>
                         </div>
                         <center> 
-                            <v-btn to="/apartment2" style="margin-top: 20px; margin-bottom: 20px; color: white;" color="lime">Apartment 2<v-icon>mdi-information</v-icon></v-btn>
+                            <v-btn to="/apartment2" style="margin-top: 20px; margin-bottom: 20px; color: white;" color="lime">Sunset Drift<v-icon>mdi-information</v-icon></v-btn>
                         </center>
                     </v-card>
 
                     <v-card elevation="11" outlined shaped tile class="AML_vueCard3" >
-                        <v-card-title style="font-size: 15px">Apartment 3</v-card-title>
+                        <v-card-title style="font-size: 15px">Adriatic Dawn</v-card-title>
                         <center> 
-                            <v-img src="../assets/apartment3p1.jpg" style="width: 85%;" @click="openGallery(3, 'Apartment 3')"></v-img>
+                            <v-img src="../assets/apartment3p1.jpg" style="width: 85%;" @click="openGallery(3, 'Adriatic Dawn')"></v-img>
                         </center>
                         <div class="AML_iconsDiv1" style="margin-left: auto; margin-right: auto; margin-top: 20px; width: 85%;">
                             <v-container>
@@ -149,14 +149,14 @@
                             </v-container>
                         </div>
                         <center> 
-                            <v-btn to="/apartment3" style="margin-top: 20px; margin-bottom: 20px; color:white" color="lime">Apartment 3<v-icon>mdi-information</v-icon></v-btn>
+                            <v-btn to="/apartment3" style="margin-top: 20px; margin-bottom: 20px; color:white" color="lime">Adriatic Dawn<v-icon>mdi-information</v-icon></v-btn>
                         </center>
                     </v-card>
 
                     <v-card elevation="11" outlined shaped tile class="AML_vueCard4" >
-                        <v-card-title style="font-size: 15px">Apartment 4</v-card-title>
+                        <v-card-title style="font-size: 15px">Blue Horizon</v-card-title>
                         <center> 
-                            <v-img src="../assets/apartment4p1.jpg" style="width: 85%;" @click="openGallery(4, 'Apartment 4')"></v-img>
+                            <v-img src="../assets/apartment4p1.jpg" style="width: 85%;" @click="openGallery(4, 'Blue Horizon')"></v-img>
                         </center>
                         <div class="AML_iconsDiv1" style="margin-left: auto; margin-right: auto; margin-top: 20px; width: 85%;">
                             <v-container>
@@ -198,7 +198,7 @@
                             </v-container>
                         </div>
                         <center> 
-                            <v-btn to="/apartment4" style="margin-top: 20px; margin-bottom: 20px; color:white" color="lime">Apartment 4<v-icon>mdi-information</v-icon></v-btn>
+                            <v-btn to="/apartment4" style="margin-top: 20px; margin-bottom: 20px; color:white" color="lime">Blue Horizon<v-icon>mdi-information</v-icon></v-btn>
                         </center>
                     </v-card>
             </center>

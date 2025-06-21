@@ -5,7 +5,7 @@
 
         <!-- 1️⃣ PRVA GALERIJA -->
         <v-card elevation="11" outlined shaped tile class="sirinaVueCards1" :style="{ zIndex: zIndex1}">
-            <v-card-title>Apartment 1</v-card-title>
+            <v-card-title>Istria Bay</v-card-title>
             <v-container>
                 <v-container>
     <v-row>
@@ -17,7 +17,7 @@
           height="300px"
           width="300px"
           class="clickable-image"
-          @click="openGallery(1, 'Apartment 1')"
+          @click="openGallery(1, 'Istria Bay')"
         ></v-img>
       </v-col>
 
@@ -31,7 +31,7 @@
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(1, 'Apartment 1')"
+              @click="openGallery(1, 'Istria Bay')"
             ></v-img>
           </v-col>
           <v-col cols="12">
@@ -41,7 +41,7 @@
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(1, 'Apartment 1')"
+              @click="openGallery(1, 'Istria Bay')"
             ></v-img>
           </v-col>
         </v-row>
@@ -89,12 +89,12 @@
                 </v-row>
              </v-container>
              <center>
-             <v-btn @click="swapZIndex()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">APARTMENT 1 <v-icon>mdi-information</v-icon></v-btn>
+             <v-btn @click="swapZIndex()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">Istria Bay <v-icon>mdi-information</v-icon></v-btn>
              </center>
         </v-card>
         <!-- INFO ZA PRVI APARTMAN -->
         <v-card class="sirinaVueCards1-1" :style="{ zIndex: zIndex2}">
-            <v-card-title>Apartment 1 INFO</v-card-title>
+            <v-card-title>Istria Bay INFO</v-card-title>
             <v-container style="text-align: left;">
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
@@ -118,7 +118,7 @@
         </v-card>
 
         <v-card elevation="11" outlined shaped tile class="sirinaVueCards2" :style="{ zIndex: zIndex3}">
-            <v-card-title>Apartment 2</v-card-title>
+            <v-card-title>Sunset Drift</v-card-title>
             <v-container>
                 <v-container>
     <v-row>
@@ -130,7 +130,7 @@
           height="300px"
           width="300px"
           class="clickable-image"
-          @click="openGallery(2, 'Apartment 2')"
+          @click="openGallery(2, 'Sunset Drift')"
         ></v-img>
       </v-col>
 
@@ -144,7 +144,7 @@
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(2, 'Apartment 2')"
+              @click="openGallery(2, 'Sunset Drift')"
             ></v-img>
           </v-col>
           <v-col cols="12">
@@ -154,7 +154,7 @@
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(2, 'Apartment 2')"
+              @click="openGallery(2, 'Sunset Drift')"
             ></v-img>
           </v-col>
         </v-row>
@@ -202,12 +202,12 @@
                 </v-row>
              </v-container>
              <center>
-             <v-btn @click="swapZIndex2()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">APARTMENT 2 <v-icon>mdi-information</v-icon></v-btn>
+             <v-btn @click="swapZIndex2()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">Sunset Drift <v-icon>mdi-information</v-icon></v-btn>
              </center>
         </v-card>
         <!--INFO ZA DRUGI APARTMAN -->
         <v-card class="sirinaVueCards1-2" :style="{ zIndex: zIndex4}">
-            <v-card-title>Apartment 2 INFO</v-card-title>
+            <v-card-title>Sunset Drift INFO</v-card-title>
             <v-container style="text-align: left;">
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
@@ -231,7 +231,7 @@
         </v-card>
 
         <v-card elevation="11" outlined shaped tile class="sirinaVueCards3" :style="{ zIndex: zIndex5}">
-            <v-card-title>Apartment 3</v-card-title>
+            <v-card-title>Adriatic Dawn</v-card-title>
             <v-container>
                 <v-container>
     <v-row>
@@ -243,7 +243,7 @@
           height="300px"
           width="300px"
           class="clickable-image"
-          @click="openGallery(3, 'Apartment 3')"
+          @click="openGallery(3, 'Adriatic Dawn')"
         ></v-img>
       </v-col>
 
@@ -256,7 +256,7 @@
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(3, 'Apartment 3')"
+              @click="openGallery(3, 'Adriatic Dawn')"
             ></v-img>
           </v-col>
           <v-col cols="12">
@@ -266,7 +266,7 @@
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(3, 'Apartment 3')"
+              @click="openGallery(3, 'Adriatic Dawn')"
             ></v-img>
           </v-col>
         </v-row>
@@ -314,11 +314,11 @@
                 </v-row>
              </v-container>
              <center>
-             <v-btn @click="swapZIndex3()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">APARTMENT 3<v-icon>mdi-information</v-icon></v-btn>
+             <v-btn @click="swapZIndex3()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">Adriatic Dawn <v-icon>mdi-information</v-icon></v-btn>
              </center>
         </v-card>
         <v-card class="sirinaVueCards1-3" :style="{ zIndex: zIndex6}">
-            <v-card-title>Apartment 3 INFO</v-card-title>
+            <v-card-title>Adriatic Dawn INFO</v-card-title>
             <v-container style="text-align: left;">
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
@@ -343,7 +343,7 @@
 
 
         <v-card elevation="11" outlined shaped tile class="sirinaVueCards4" :style="{ zIndex: zIndex7}">
-            <v-card-title>Apartment 4</v-card-title>
+            <v-card-title>Blue Horizon</v-card-title>
             <v-container>
                 <v-container>
     <v-row>
@@ -355,7 +355,7 @@
           height="300px"
           width="300px"
           class="clickable-image"
-          @click="openGallery(4, 'Apartment 4')"
+          @click="openGallery(4, 'Blue Horizon')"
         ></v-img>
       </v-col>
 
@@ -368,7 +368,7 @@
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(4, 'Apartment 4')"
+              @click="openGallery(4, 'Blue Horizon')"
             ></v-img>
           </v-col>
           <v-col cols="12">
@@ -378,7 +378,7 @@
               height="138px"
               width="300px"
               class="clickable-image"
-              @click="openGallery(4, 'Apartment 4')"
+              @click="openGallery(4, 'Blue Horizon')"
             ></v-img>
           </v-col>
         </v-row>
@@ -426,12 +426,12 @@
                 </v-row>
              </v-container>
              <center>
-             <v-btn @click="swapZIndex4()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">APARTMENT 4<v-icon>mdi-information</v-icon></v-btn>
+             <v-btn @click="swapZIndex4()" color="lime" style="color: white; margin-top: 20px; margin-bottom: 20px;">Blue Horizon <v-icon>mdi-information</v-icon></v-btn>
              </center>
         </v-card>
 
         <v-card class="sirinaVueCards1-4" :style="{ zIndex: zIndex8}">
-            <v-card-title>Apartment 4 INFO</v-card-title>
+            <v-card-title>Blue Horizon INFO</v-card-title>
             <v-container style="text-align: left;">
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Size:</b> 1 Bedroom, 1 Bathroom</v-card-text>
                         <v-card-text style="font-size: 15px;" class="pa-1"><b>Amenities:</b> Wi-Fi, Air Conditioning, Heating, TV, Kitchen</v-card-text>
@@ -545,7 +545,12 @@ export default {
       currentImage: 0,
       galleryTitle: "",
       selectedImages: [],
-
+      apartmentNames: {
+        1: "Istria Bay Apartment",
+        2: "Sunset Drift Apartment",
+        3: "Adriatic Dawn Apartment",
+        4: "Blue Horizon Apartment"
+      },
       // 📷 Svaka kartica ima svoju galeriju
       galleries: [
         [ require('@/assets/apartmentspic3.jpg'), require('@/assets/apartmentspic10.jpg'), require('@/assets/apartmentspic1.jpg'), require('@/assets/lapalmaapartments1.jpg'), require('@/assets/apartmentspic11.jpg'), require('@/assets/apartmentspic8.jpg'), require('@/assets/apartmentspic6.jpg'), require('@/assets/apartmentspic12.jpg'),  require('@/assets/lapalmaapartments3.jpg'), require('@/assets/lapalmaapartments5.jpg'), require('@/assets/apartmentspic9.jpg')],
@@ -612,7 +617,8 @@ export default {
     },
     openWhatsApp(apartmentNumber) {
       const phoneNumber = "+393279431662"; // bez + znaka
-      const message = `I am interested in apartment ${apartmentNumber}!`;
+      const apartmentName = this.apartmentNames[apartmentNumber] || `Apartment ${apartmentNumber}`;
+      const message = `I am interested in apartment ${apartmentName}!`;
       const encodedMessage = encodeURIComponent(message);
       const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
       window.open(url, "_blank");
@@ -626,8 +632,9 @@ export default {
     },
     sendGmail(apartmentNumber) {
       const email = "croatiavacation05@gmail.com";
-      const subject = `Inquiry about Apartment ${apartmentNumber}`;
-      const body = `I am interested in apartment ${apartmentNumber}! Please send me more information.`;
+      const apartmentName = this.apartmentNames[apartmentNumber] || `Apartment ${apartmentNumber}`;
+      const subject = `Inquiry about Apartment ${apartmentName}`;
+      const body = `I am interested in ${apartmentName}! Please send me more information.`;
       const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.open(gmailLink, "_blank");
     },

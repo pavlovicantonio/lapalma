@@ -87,7 +87,7 @@
             <v-btn icon href="https://www.instagram.com/croatiadreamholidayy/" target="_blank">
               <v-icon color="#1976d2">mdi-instagram</v-icon>
             </v-btn>
-            <v-btn icon href="https://facebook.com" target="_blank">
+            <v-btn icon @click="infoWhatsapp()" target="_blank">
               <v-icon color="#1976d2">mdi-whatsapp</v-icon>
             </v-btn>
             <v-btn icon @click="sendGmail1()" target="_blank">
@@ -174,9 +174,12 @@
       const gmailLink = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.open(gmailLink, "_blank");
       },
-      openWhatsapp2(){
-        
-      }
+      infoWhatsApp() {
+        const phoneNumber = "+393279431662";
+        const message = "I am interested in your apartments!";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+        },
 
     }
   };
